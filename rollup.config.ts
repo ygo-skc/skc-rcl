@@ -34,7 +34,7 @@ export default [
 			external(),
 			terser(),
 		],
-		external: ['react', 'react-dom', 'styled-components'],
+		external: ['react', 'react-dom', 'styled-components', '@mui/material'],
 	},
 	// expose types
 	{

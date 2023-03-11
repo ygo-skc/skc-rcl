@@ -1,3 +1,3 @@
-import Temp from './components/generic/Temp.js'
+import Hint from './components/generic/Hint.js'
 
-export { Temp }
+export { Hint }
