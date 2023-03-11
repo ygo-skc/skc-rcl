@@ -5,6 +5,7 @@
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"scripts": {
+		"fresh-install": "rm -rf node_modules; npm install --no-optional",
 		"build": "rm -rf dist && rollup -c  --configPlugin @rollup/plugin-typescript",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"storybook": "start-storybook -p 6006",
@@ -19,6 +20,8 @@
 	"devDependencies": {
 		"@babel/core": "7.21.0",
 		"@babel/preset-react": "7.18.6",
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
 		"@mui/material": "^5.11.12",
 		"@rollup/plugin-babel": "^6.0.3",
 		"@rollup/plugin-node-resolve": "15.0.1",
@@ -34,6 +37,7 @@
 		"@types/react": "18.0.28",
 		"@types/rollup-plugin-peer-deps-external": "^2.2.1",
 		"babel-loader": "8.3.0",
+		"default-browser-id": "^3.0.0",
 		"postcss": "^8.4.21",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
@@ -45,9 +49,9 @@
 		"typescript": "4.9.5"
 	},
 	"peerDependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"@mui/material": "^5.11.1"
+		"@mui/material": "^5.11.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"files": [
 		"./dist/*"

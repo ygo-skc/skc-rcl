@@ -11,5 +11,18 @@ export default {
 
 export const Default = Template.bind({})
 Default.args = {
-	children: <p>yooo</p>,
+	children: 'No Content To Show',
+}
+
+export const Tight = Template.bind({})
+Tight.args = {
+	children: 'No Content To Show',
+	variant: 'tight',
+}
+
+export const NonFullWidth = Template.bind({})
+NonFullWidth.args = {
+	children: 'No Content To Show',
+	variant: 'tight',
+	fullWidth: false,
 }
