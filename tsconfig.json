@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"strict": true,
+		"skipLibCheck": true,
+		"jsx": "react",
+		"module": "ESNext",
+		"declaration": false,
+		// if declaration is true, you can comment below. This will expose .d.ts files for all .ts files - however this isn't necessary as rollup is using dts plugin
+		// "declarationDir": "types",
+		// "emitDeclarationOnly": true,
+		"sourceMap": true,
+		"outDir": "dist",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"exclude": ["dist", "node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx"]
+}

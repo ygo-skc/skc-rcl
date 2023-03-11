@@ -1,0 +1,13 @@
+.vscode
+node_modules
+.DS_Store
+build/*
+dist/*
+
+.idea/
+coverage/
+
+# Stryker.js
+.stryker-tmp
+stryker.log
+mutation.html
