@@ -37,7 +37,7 @@
 		"@storybook/testing-library": "0.0.13",
 		"@types/react": "18.0.28",
 		"@types/rollup-plugin-peer-deps-external": "2.2.1",
-		"babel-loader": "8.3.0",
+		"babel-loader": "9.1.2",
 		"default-browser": "3.1.0",
 		"postcss": "8.4.21",
 		"react": "18.2.0",
