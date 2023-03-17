@@ -3,16 +3,17 @@ import React, { FC } from 'react'
 
 import '../../css/generic/glance.css'
 
-type _Glance = {
+export type GlanceProps = {
 	total: number
 	subject: string
 	color: string
 	action: any
+	variant: 'small' | 'medium' | 'large' | 'full-width'
 }
 
-const Glance: FC<_Glance> = ({ total, subject, color, action }) => {
+const Glance: FC<GlanceProps> = ({ total, subject, color, action, variant }) => {
 	return (
-		<div className='glance' onClick={() => action()}>
+		<div className={`glance ${variant}`} onClick={() => action()}>
 			<Typography className='glance-prominent-text' variant='h1' align='center'>
 				{total.toLocaleString('en')}
 			</Typography>
