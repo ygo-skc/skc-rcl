@@ -5,11 +5,11 @@ import { Dates } from '../../helper/Dates'
 
 import '../../css/generic/date-component.css'
 
-type _Date = {
+type DateProps = {
 	date: Date
 }
 
-const DateComponent: FC<_Date> = ({ date }) => {
+const DateComponent: FC<DateProps> = ({ date }) => {
 	return (
 		<div className='date-parent'>
 			<div className='month-container'>
