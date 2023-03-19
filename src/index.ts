@@ -1,3 +1,6 @@
-import Hint from './components/generic/Hint.js'
+import DateComponent from './components/data-display/DateComponent.js'
+import Glance from './components/data-display/Glance.js'
+import Hint from './components/data-display/Hint.js'
+import Section from './components/data-display/Section.js'
 
-export { Hint }
+export { DateComponent, Glance, Hint, Section }

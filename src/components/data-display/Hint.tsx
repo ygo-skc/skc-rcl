@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react'
 import { Typography } from '@mui/material'
 
-import '../../css/generic/hint.css'
+import '../../css/data-display/hint.css'
 
 type HintProps = {
 	children?: ReactNode

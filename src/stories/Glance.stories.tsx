@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Glance, { GlanceProps } from '../components/generic/Glance'
+import Glance, { GlanceProps } from '../components/data-display/Glance'
 
 const Template = (args: GlanceProps) => <Glance {...args} />
 

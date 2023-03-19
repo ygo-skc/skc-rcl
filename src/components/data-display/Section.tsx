@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react'
 import { Typography } from '@mui/material'
 
 // import '../../../css/card/ygo-card-styles.css'
-import '../../css/generic/section.css'
+import '../../css/data-display/section.css'
 
 export type SectionProps = {
 	sectionName: string

@@ -3,7 +3,7 @@ import { Typography } from '@mui/material'
 
 import { Dates } from '../../helper/Dates'
 
-import '../../css/generic/date-component.css'
+import '../../css/data-display/date-component.css'
 
 type DateProps = {
 	date: Date

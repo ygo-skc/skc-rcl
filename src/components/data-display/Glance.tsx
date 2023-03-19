@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material'
 import React, { FC } from 'react'
 
-import '../../css/generic/glance.css'
+import '../../css/data-display/glance.css'
 
 export type GlanceProps = {
 	total: number

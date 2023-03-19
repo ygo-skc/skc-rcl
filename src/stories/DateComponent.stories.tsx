@@ -1,6 +1,6 @@
 import React from 'react'
 
-import DateComponent from '../components/generic/DateComponent'
+import DateComponent from '../components/data-display/DateComponent'
 
 const Template = (args) => <DateComponent {...args} />
 

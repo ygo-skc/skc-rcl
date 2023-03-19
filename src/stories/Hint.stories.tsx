@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Hint from '../components/generic/Hint'
+import Hint from '../components/data-display/Hint'
 
 const Template = (args) => <Hint {...args} />
 
