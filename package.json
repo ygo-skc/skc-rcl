@@ -1,12 +1,12 @@
 {
 	"name": "skc-rcl",
-	"version": "0.1.11",
+	"version": "0.2.8",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"scripts": {
-		"preinstall": "npx npm-force-resolutions",
-		"fresh-install": "rm -rf node_modules && npm install",
+		"preinstall": "npx force-resolutions",
+		"fresh-install": "rm -rf node_modules package-lock.json && npm install",
 		"start": "start-storybook -p 6006",
 		"build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -58,6 +58,6 @@
 		"react-dom": "18.2.0"
 	},
 	"files": [
-		"./dist/*"
+		"dist"
 	]
 }
