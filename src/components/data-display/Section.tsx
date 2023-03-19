@@ -6,7 +6,7 @@ import '../../css/data-display/section.css'
 
 export type SectionProps = {
 	sectionName: string
-	sectionContent: ReactNode
+	children: ReactNode
 	sectionHeaderBackground?: 'default' | 'ban-list' | 'product' | ''
 	sticky?: boolean
 	maxWidth?: string
@@ -16,8 +16,8 @@ export type SectionProps = {
 }
 
 const Section: FC<SectionProps> = ({
+	children,
 	sectionName,
-	sectionContent,
 	sectionHeaderBackground = 'default',
 	sticky = false,
 	maxWidth = '100%',
@@ -44,7 +44,7 @@ const Section: FC<SectionProps> = ({
 				</Typography>
 			</div>
 
-			{sectionContent}
+			{children}
 		</div>
 	)
 }

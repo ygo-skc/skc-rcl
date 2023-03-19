@@ -12,7 +12,7 @@ export default {
 export const Default = Template.bind({})
 Default.args = {
 	sectionName: 'Content',
-	sectionContent: (
+	children: (
 		<div>
 			<p>This is the content</p>
 		</div>
