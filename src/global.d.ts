@@ -1,0 +1,18 @@
+declare type cardColor =
+	| 'normal'
+	| 'effect'
+	| 'ritual'
+	| 'fusion'
+	| 'synchro'
+	| 'xyz'
+	| 'pendulum-normal'
+	| 'pendulum-effect'
+	| 'pendulum-fusion'
+	| 'pendulum-xyz'
+	| 'pendulum-synchro'
+	| 'token'
+	| 'link'
+	| 'spell'
+	| 'trap'
+	| 'err'
+	| undefined

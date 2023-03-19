@@ -1,13 +1,11 @@
 import React, { FC, ReactNode } from 'react'
 import { Typography } from '@mui/material'
-
-// import '../../../css/card/ygo-card-styles.css'
 import '../../css/data-display/section.css'
 
 export type SectionProps = {
 	sectionName: string
 	children: ReactNode
-	sectionHeaderBackground?: 'default' | 'ban-list' | 'product' | ''
+	sectionHeaderBackground?: 'default' | 'ban-list' | 'product' | '' | cardColor
 	sticky?: boolean
 	maxWidth?: string
 	shadow?: 'heavy-shadow' | 'light-shadow' | 'no-shadow'
