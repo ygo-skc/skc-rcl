@@ -1,6 +1,6 @@
 {
 	"name": "skc-rcl",
-	"version": "0.2.10",
+	"version": "0.3.1",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
@@ -29,6 +29,7 @@
 		"@emotion/react": "11.10.6",
 		"@emotion/styled": "11.10.6",
 		"@mui/material": "5.11.13",
+		"@nivo/pie": "0.80.0",
 		"@rollup/plugin-babel": "6.0.3",
 		"@rollup/plugin-node-resolve": "15.0.1",
 		"@rollup/plugin-terser": "0.4.0",

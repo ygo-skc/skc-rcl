@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Section, { SectionProps } from '../components/data-display/Section'
+import Section, { SectionProps } from '../../components/data-display/Section'
 
 const Template = (args: SectionProps) => <Section {...args} />
 

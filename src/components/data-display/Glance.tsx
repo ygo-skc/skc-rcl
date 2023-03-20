@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material'
 import React, { FC } from 'react'
+import { Typography } from '@mui/material'
 
 import '../../css/data-display/glance.css'
 
