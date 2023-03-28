@@ -28,7 +28,7 @@
 		"@babel/preset-react": "7.18.6",
 		"@emotion/react": "11.10.6",
 		"@emotion/styled": "11.10.6",
-		"@mui/material": "5.11.14",
+		"@mui/material": "5.11.15",
 		"@nivo/pie": "0.80.0",
 		"@rollup/plugin-babel": "6.0.3",
 		"@rollup/plugin-node-resolve": "15.0.1",
