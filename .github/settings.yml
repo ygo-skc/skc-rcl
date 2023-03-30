@@ -14,7 +14,7 @@ repository:
   has_downloads: false
 
   # Updates the default branch for this repository.
-  default_branch: release
+  default_branch: master
 
   # Either `true` to allow squash-merging pull requests, or `false` to prevent
   # squash-merging.
@@ -33,11 +33,6 @@ labels:
     color: CC0000
   - name: feature
     color: 336699
-
-milestones:
-  - title: Operation Perfect Release
-    description: Get final non beta release as perfect as possible.
-    state: open
 
 # Collaborators: give specific users access to this repository.
 collaborators:
