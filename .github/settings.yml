@@ -3,7 +3,7 @@ repository:
   name: skc-rcl
   description: React Component Library (RCL) used by SKC React projects.
   homepage: https://www.thesupremekingscastle.com/about
-  topics: ygo, yugioh, skc, website, react component library, rollup, react
+  topics: ygo, yugioh, skc, website, rollup, react
   private: false
   has_issues: true
   has_wiki: false
