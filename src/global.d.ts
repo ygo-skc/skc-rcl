@@ -1,3 +1,5 @@
+declare module '*.svg'
+
 declare type cardColor =
 	| 'normal'
 	| 'effect'

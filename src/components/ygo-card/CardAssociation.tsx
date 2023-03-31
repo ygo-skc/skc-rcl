@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, lazy } from 'react'
+import React, { FC, ReactElement } from 'react'
 import ImageWithNumber from './ImageWithText'
 
 import levelImg from '../../img/card_level.svg'
