@@ -34,7 +34,7 @@ export default [
 			external(),
 			terser(),
 		],
-		external: ['react', 'react-dom', 'styled-components', '@mui/material', '@nivo/pie', '@emotion/react', '@emotion/styled'],
+		external: ['react', 'react-dom', 'styled-components', '@mui/material', '@nivo/pie', '@emotion/react', '@emotion/styled', 'react-visibility-sensor'],
 	},
 	// expose types
 	{
