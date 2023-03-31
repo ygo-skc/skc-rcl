@@ -19,7 +19,7 @@ const YGOCard: FC<YGOCardProps> = memo(
 		}
 
 		return (
-			<div className={[className, 'ygo-card-style-base', `${cardColor}-ygo-card-style`, 'YgoCardLightText'].join(' ')}>
+			<div className={[className, 'ygo-card-style-base', `${cardColor?.toLowerCase()}-ygo-card-style`, 'YgoCardLightText'].join(' ')}>
 				<Typography variant='subtitle1' id='card-name' noWrap={true}>
 					{cardName}
 				</Typography>
