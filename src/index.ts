@@ -3,8 +3,11 @@ import GenericNonBreakingErr from './components/data-display/GenericNonBreakingE
 import Glance from './components/data-display/Glance.js'
 import Hint from './components/data-display/Hint.js'
 import Section from './components/data-display/Section.js'
+export { DateComponent, GenericNonBreakingErr, Glance, Hint, Section }
 
 import Pie from './components/data-display/charts/Pie.js'
-
-export { DateComponent, GenericNonBreakingErr, Glance, Hint, Section }
 export { Pie }
+
+import CardImageRounded from './components/photo/CardImageRounded.js'
+import LinkPhoto from './components/photo/LinkPhoto.js'
+export { CardImageRounded, LinkPhoto }
