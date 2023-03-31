@@ -11,3 +11,6 @@ export { Pie }
 import CardImageRounded from './components/photo/CardImageRounded.js'
 import LinkPhoto from './components/photo/LinkPhoto.js'
 export { CardImageRounded, LinkPhoto }
+
+import YGOCard from './components/ygo-card/YGOCard.js'
+export { YGOCard }

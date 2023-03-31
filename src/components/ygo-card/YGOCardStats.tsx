@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import { Typography } from '@mui/material'
-import { decodeHTML } from 'entities'
 import AtkDef from './AtkDef'
 
 import '../../css/ygo-card/ygo-card-styles.css'
@@ -21,11 +20,11 @@ const YGOCardStats: FC<YGOCardStatsProps> = ({ cardColor, cardEffect, monsterTyp
 
 			{!fullDetails ? (
 				<Typography className='ygo-card-effect-component-some-details' variant='body2'>
-					{decodeHTML(cardEffect)}
+					{cardEffect}
 				</Typography>
 			) : (
 				<Typography className='ygo-card-effect-component-full-details' variant='body2'>
-					{decodeHTML(cardEffect)}
+					{cardEffect}
 				</Typography>
 			)}
 
