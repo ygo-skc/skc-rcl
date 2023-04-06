@@ -11,7 +11,8 @@
 		"start": "sb dev -p 6006",
 		"build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build-storybook": "sb build"
+		"build-storybook": "sb build",
+		"lint": "eslint src --ext .tsx"
 	},
 	"keywords": [
 		"skc",
@@ -47,6 +48,10 @@
 		"@storybook/react-webpack5": "7.0.2",
 		"@types/react": "18.0.33",
 		"@types/rollup-plugin-peer-deps-external": "2.2.1",
+		"@typescript-eslint/eslint-plugin": "5.57.1",
+		"@typescript-eslint/parser": "5.57.1",
+		"eslint": "8.37.0",
+		"eslint-plugin-react": "7.32.2",
 		"react": "18.2.0",
 		"react-visibility-sensor": "5.1.1",
 		"rollup": "3.20.2",

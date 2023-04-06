@@ -12,6 +12,7 @@ export type YGOCardProps = SKCCard & {
 	className?: string
 }
 
+/* eslint-disable react/display-name */
 const YGOCard: FC<YGOCardProps> = memo(
 	({ cardName, cardColor, cardEffect, monsterType, cardAttribute, monsterAttack, monsterDefense, monsterAssociation, cardID, fullDetails, isLoading, className }) => {
 		if (isLoading) {

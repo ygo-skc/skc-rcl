@@ -15,8 +15,8 @@ const LinkPhoto: FC<LinkPhotoProps> = ({ imageSrc, imageName, link }) => {
 			alt={`${imageName} - Click To Navigate To ${link}`}
 			src={imageSrc}
 			onClick={() => {
-				const w = window.open(link, '_blank')!
-				w.focus()
+				const w = window.open(link, '_blank')
+				w !== null && w.focus()
 			}}
 		/>
 	)

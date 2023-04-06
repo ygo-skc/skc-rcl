@@ -35,7 +35,7 @@ const YGOCardStats: FC<YGOCardStatsProps> = ({ cardColor, cardEffect, monsterTyp
 					</Typography>
 				) : undefined}
 
-				{fullDetails && !isBackRow && cardColor?.toUpperCase() !== 'ERR' && <AtkDef monsterAtk={monsterAttack} monsterDef={monsterDefense} cardColor={cardColor!} />}
+				{fullDetails && !isBackRow && color !== 'err' && cardColor !== undefined && <AtkDef monsterAtk={monsterAttack} monsterDef={monsterDefense} cardColor={cardColor} />}
 			</div>
 		</div>
 	)
