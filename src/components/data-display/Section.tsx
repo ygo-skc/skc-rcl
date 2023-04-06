@@ -29,7 +29,7 @@ const Section: FC<SectionProps> = ({
 		sectionHeaderBackgroundClass =
 			sectionHeaderBackground === 'default' || sectionHeaderBackground === 'ban-list' || sectionHeaderBackground === 'product'
 				? `${sectionHeaderBackground}-section-header-container`
-				: `${sectionHeaderBackground}-ygo-card-style`
+				: `${sectionHeaderBackground.toLocaleLowerCase()}-ygo-card-style`
 	}
 
 	const stickyClass = sticky ? 'sticky' : ''
