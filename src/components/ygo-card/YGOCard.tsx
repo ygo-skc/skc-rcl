@@ -15,7 +15,7 @@ export type YGOCardProps = SKCCard & {
 const YGOCard: FC<YGOCardProps> = memo(
 	({ cardName, cardColor, cardEffect, monsterType, cardAttribute, monsterAttack, monsterDefense, monsterAssociation, cardID, fullDetails, isLoading, className }) => {
 		if (isLoading) {
-			return <Skeleton variant='rectangular' height='150' className='rounded-skeleton' />
+			return <Skeleton variant='rectangular' height='150px' className='rounded-skeleton' />
 		}
 
 		return (
