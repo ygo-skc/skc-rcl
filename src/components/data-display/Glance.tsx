@@ -7,13 +7,13 @@ export type GlanceProps = {
 	total: number
 	subject: string
 	color: string
-	action: any
+	action: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 	variant: 'small' | 'medium' | 'large' | 'full-width'
 }
 
 const Glance: FC<GlanceProps> = ({ total, subject, color, action, variant }) => {
 	return (
-		<div className={`glance ${variant}`} onClick={() => action()}>
+		<div className={`glance ${variant}`} onClick={action}>
 			<Typography className='glance-prominent-text' variant='h1' align='center'>
 				{total.toLocaleString('en')}
 			</Typography>

@@ -13,37 +13,46 @@ export type YGOCardProps = SKCCard & {
 }
 
 /* eslint-disable react/display-name */
-const YGOCard: FC<YGOCardProps> = memo(
-	({ cardName, cardColor, cardEffect, monsterType, cardAttribute, monsterAttack, monsterDefense, monsterAssociation, cardID, fullDetails, isLoading, className }) => {
-		if (isLoading) {
-			return <Skeleton variant='rectangular' height='150px' className='rounded-skeleton' />
-		}
-
-		return (
-			<div className={[className, 'ygo-card-style-base', `${cardColor?.toLowerCase()}-ygo-card-style`, 'YgoCardLightText'].join(' ')}>
-				<Typography variant='subtitle1' id='card-name' noWrap={true}>
-					{cardName}
-				</Typography>
-
-				<CardAssociation monsterAssociation={monsterAssociation} attribute={cardAttribute} />
-
-				<YGOCardStats
-					cardColor={cardColor}
-					cardEffect={cardEffect}
-					monsterType={monsterType}
-					monsterAttack={monsterAttack}
-					monsterDefense={monsterDefense}
-					cardID={cardID}
-					fullDetails={fullDetails}
-				/>
-			</div>
-		)
-	},
-	(prevProps, newProps) => {
-		if (prevProps.cardName !== newProps.cardName) return false
-
-		return true
+const YGOCard: FC<YGOCardProps> = ({
+	cardName,
+	cardColor,
+	cardEffect,
+	monsterType,
+	cardAttribute,
+	monsterAttack,
+	monsterDefense,
+	monsterAssociation,
+	cardID,
+	fullDetails,
+	isLoading,
+	className,
+}) => {
+	if (isLoading) {
+		return <Skeleton variant='rectangular' height='150px' className='rounded-skeleton' />
 	}
-)
 
-export default YGOCard
+	return (
+		<div className={[className, 'ygo-card-style-base', `${cardColor?.toLowerCase()}-ygo-card-style`, 'YgoCardLightText'].join(' ')}>
+			<Typography variant='subtitle1' id='card-name' noWrap={true}>
+				{cardName}
+			</Typography>
+
+			<CardAssociation monsterAssociation={monsterAssociation} attribute={cardAttribute} />
+
+			<YGOCardStats
+				cardColor={cardColor}
+				cardEffect={cardEffect}
+				monsterType={monsterType}
+				monsterAttack={monsterAttack}
+				monsterDefense={monsterDefense}
+				cardID={cardID}
+				fullDetails={fullDetails}
+			/>
+		</div>
+	)
+}
+
+export default memo(YGOCard, (prevProps, newProps) => {
+	if (prevProps.cardName !== newProps.cardName) return false
+	return true
+})
