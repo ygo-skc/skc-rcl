@@ -11,3 +11,6 @@ coverage/
 .stryker-tmp
 stryker.log
 mutation.html
+
+# storybook
+storybook-static/**
