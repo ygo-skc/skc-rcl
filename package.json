@@ -15,7 +15,7 @@
 		"build-storybook": "sb build",
 		"lint": "eslint src --ext .tsx",
 		"deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
-		"gh:deploy-storybook": "git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/skc-rcl.git && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\""
+		"gh:deploy-storybook": "git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/ygo-skc/skc-rcl.git && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\""
 	},
 	"keywords": [
 		"skc",
