@@ -14,7 +14,7 @@ on:
       - reopened
 
 jobs:
-  unit-test:
+  build-and-code-quality:
     runs-on: ubuntu-latest
 
     steps:
