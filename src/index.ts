@@ -3,7 +3,8 @@ import GenericNonBreakingErr from './components/data-display/GenericNonBreakingE
 import Glance from './components/data-display/Glance.js'
 import Hint from './components/data-display/Hint.js'
 import Section from './components/data-display/Section.js'
-export { DateComponent, GenericNonBreakingErr, Glance, Hint, Section }
+import SKCTable from './components/data-display/SKCTable.js'
+export { DateComponent, GenericNonBreakingErr, Glance, Hint, Section, SKCTable }
 
 import Pie from './components/data-display/charts/Pie.js'
 export { Pie }
