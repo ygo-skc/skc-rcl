@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material'
 import React, { FC } from 'react'
 import CardImageRounded from '../photo/CardImageRounded'
-import YGOCard from './YGOCard'
+import YGOCardData from './YGOCardData'
 
 import '../../css/ygo-card/ygo-card-with-previous-ban-status.css'
 
@@ -24,7 +24,7 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 					</Typography>
 				</div>
 			</div>
-			<YGOCard
+			<YGOCardData
 				cardID={card.cardID}
 				cardName={card.cardName}
 				cardColor={card.cardColor}

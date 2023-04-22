@@ -4,7 +4,7 @@ import AtkDef, { AtkDefProps } from '../../components/ygo-card/AtkDef'
 const Template = (args) => <AtkDef {...args} />
 
 export default {
-	title: 'Yugioh-Card/Attack-Defense',
+	title: 'Yugioh Card/Attack-Defense',
 	component: AtkDef,
 }
 

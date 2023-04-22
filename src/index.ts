@@ -13,8 +13,8 @@ import CardImageRounded from './components/photo/CardImageRounded.js'
 import LinkPhoto from './components/photo/LinkPhoto.js'
 export { CardImageRounded, LinkPhoto }
 
+import YGOCardData from './components/ygo-card/YGOCardData.js'
 import YGOCard from './components/ygo-card/YGOCard.js'
-import YGOCardWithImage from './components/ygo-card/YGOCardWithImage.js'
 import YGOCardWithPreviousBanStatus from './components/ygo-card/YGOCardWithPreviousBanStatus.js'
 import YGOCardWithQuantity from './components/ygo-card/YGOCardWithQuantity.js'
-export { YGOCard, YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity }
+export { YGOCardData as YGOCard, YGOCard as YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity }

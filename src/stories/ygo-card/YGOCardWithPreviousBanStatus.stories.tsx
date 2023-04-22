@@ -1,26 +1,50 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import YGOCardWithPreviousBanStatus from '../../components/ygo-card/YGOCardWithPreviousBanStatus'
 import React from 'react'
-import YGOCardWithPreviousBanStatus, { YGOCardWithPreviousBanStatusProps } from '../../components/ygo-card/YGOCardWithPreviousBanStatus'
 
-const Template = (args) => <YGOCardWithPreviousBanStatus {...args} />
-
-export default {
-	title: 'Yugioh-Card/YGOCardWithPreviousBanStatus',
+const meta: Meta<typeof YGOCardWithPreviousBanStatus> = {
+	title: 'Yugioh Card/Yugioh Card',
 	component: YGOCardWithPreviousBanStatus,
+	decorators: [
+		(Story) => (
+			<div style={{ width: '300px' }}>
+				<Story />
+			</div>
+		),
+	],
+	args: {
+		card: {
+			cardName: 'DARK MAGICIAN',
+			cardColor: 'Normal',
+			cardEffect: 'The ultimate wizard in terms of attack and defense.',
+			monsterType: 'Spellcaster/Normal',
+			monsterAssociation: {
+				level: '7',
+			},
+			monsterAttack: '2500',
+			monsterDefense: '2100',
+			cardID: '46986414',
+		},
+	},
+}
+export default meta
+
+type Story = StoryObj<typeof YGOCardWithPreviousBanStatus>
+
+export const PreviouslyForbiddenYugiohCard: Story = {
+	args: {
+		previousBanStatus: 'Forbidden',
+	},
 }
 
-export const Default = Template.bind({})
-Default.args = {
-	card: {
-		cardName: 'DARK MAGICIAN',
-		cardColor: 'Normal',
-		cardEffect: 'The ultimate wizard in terms of attack and defense.',
-		monsterType: 'Spellcaster/Normal',
-		monsterAssociation: {
-			level: '7',
-		},
-		monsterAttack: '2500',
-		monsterDefense: '2100',
-		cardID: '46986414',
+export const PreviouslyLimitedYugiohCard: Story = {
+	args: {
+		previousBanStatus: 'Limited',
 	},
-	previousBanStatus: 'Forbidden',
-} as YGOCardWithPreviousBanStatusProps
+}
+
+export const PreviouslySemiLimitedYugiohCard: Story = {
+	args: {
+		previousBanStatus: 'Semi-Limited',
+	},
+}

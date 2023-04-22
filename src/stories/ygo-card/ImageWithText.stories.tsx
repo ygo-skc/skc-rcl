@@ -4,7 +4,7 @@ import ImageWithText, { ImageWithTextProps } from '../../components/ygo-card/Ima
 const Template = (args) => <ImageWithText {...args} />
 
 export default {
-	title: 'Yugioh-Card/ImageWithText',
+	title: 'Yugioh Card/ImageWithText',
 	component: ImageWithText,
 }
 

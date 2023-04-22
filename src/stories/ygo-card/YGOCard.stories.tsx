@@ -1,43 +1,34 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import YGOCard from '../../components/ygo-card/YGOCard'
 import React from 'react'
-import YGOCard, { YGOCardProps } from '../../components/ygo-card/YGOCard'
 
-const Template = (args) => <YGOCard {...args} />
-
-export default {
-	title: 'Yugioh-Card/YGOCard',
+const meta: Meta<typeof YGOCard> = {
+	title: 'Yugioh Card/Yugioh Card',
 	component: YGOCard,
+	decorators: [
+		(Story) => (
+			<div style={{ width: '300px' }}>
+				<Story />
+			</div>
+		),
+	],
+	args: {
+		card: {
+			cardName: 'DARK MAGICIAN',
+			cardColor: 'Normal',
+			cardEffect: 'The ultimate wizard in terms of attack and defense.',
+			monsterType: 'Spellcaster/Normal',
+			monsterAssociation: {
+				level: '7',
+			},
+			monsterAttack: '2500',
+			monsterDefense: '2100',
+			cardID: '46986414',
+		},
+	},
 }
+export default meta
 
-export const FullDetails_False = Template.bind({})
-FullDetails_False.args = {
-	cardName: 'DARK MAGICIAN',
-	cardColor: 'Normal',
-	cardEffect: 'The ultimate wizard in terms of attack and defense.',
-	monsterType: 'Spellcaster/Normal',
-	monsterAssociation: {
-		level: '7',
-	},
-	monsterAttack: '2500',
-	monsterDefense: '2100',
-	cardID: '46986414',
-	fullDetails: false,
-	isLoading: false,
-	className: 'normal-ygo-card-style',
-} as YGOCardProps
+type Story = StoryObj<typeof YGOCard>
 
-export const FullDetails_True = Template.bind({})
-FullDetails_True.args = {
-	cardName: 'DARK MAGICIAN',
-	cardColor: 'Normal',
-	cardEffect: 'The ultimate wizard in terms of attack and defense.',
-	monsterType: 'Spellcaster/Normal',
-	monsterAssociation: {
-		level: '7',
-	},
-	monsterAttack: '2500',
-	monsterDefense: '2100',
-	cardID: '46986414',
-	fullDetails: true,
-	isLoading: false,
-	className: 'normal-ygo-card-style',
-} as YGOCardProps
+export const DarkMagician: Story = {}

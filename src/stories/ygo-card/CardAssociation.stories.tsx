@@ -4,7 +4,7 @@ import CardAssociation, { CardAssociationProps } from '../../components/ygo-card
 const Template = (args) => <CardAssociation {...args} />
 
 export default {
-	title: 'Yugioh-Card/CardAssociation',
+	title: 'Yugioh Card/CardAssociation',
 	component: CardAssociation,
 }
 

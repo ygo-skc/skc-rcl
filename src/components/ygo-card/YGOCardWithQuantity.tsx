@@ -1,7 +1,7 @@
 import { Chip } from '@mui/material'
 import React, { FC, Fragment } from 'react'
 import CardImageRounded from '../photo/CardImageRounded'
-import YGOCard from './YGOCard'
+import YGOCardData from './YGOCardData'
 
 import '../../css/ygo-card/ygo-card-with-quantity.css'
 
@@ -20,7 +20,7 @@ const YGOCardWithQuantity: FC<YGOCardWithQuantityProps> = ({ card, occurrences }
 				</div>
 			</div>
 
-			<YGOCard
+			<YGOCardData
 				cardID={card.cardID}
 				cardName={card.cardName}
 				cardColor={card.cardColor}
