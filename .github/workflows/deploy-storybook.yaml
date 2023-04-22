@@ -3,7 +3,7 @@ name: Deploy StoryBook
 on:
   push:
     branches:
-      - release
+      - master
 
 jobs:
   deploy-sb:
