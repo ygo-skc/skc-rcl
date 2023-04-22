@@ -1,33 +1,32 @@
-import React from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import SKCTable from '../../components/data-display/SKCTable'
 
-import SKCTable, { SKCTableProps } from '../../components/data-display/SKCTable'
-
-const Template = (args: SKCTableProps) => <SKCTable {...args} />
-
-export default {
+const meta: Meta<typeof SKCTable> = {
 	title: 'Generic/SKCTable',
 	component: SKCTable,
 }
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-	header: ['Name', 'Address'],
-	rows: [
-		['Javi', '123 Fake Street'],
-		['Becky', '456 Fake Street'],
-	],
-} as SKCTableProps
+type Story = StoryObj<typeof SKCTable>
 
-export const WithOnClick = Template.bind({})
-WithOnClick.args = {
-	header: ['Name', 'Address'],
-	rows: [
-		['Javi', '123 Fake Street'],
-		['Becky', '456 Fake Street'],
-	],
-	rowActions: [getOnClick(1), getOnClick(2)],
-} as SKCTableProps
+export const Default: Story = {
+	args: {
+		header: ['Name', 'Address'],
+		rows: [
+			['Javi', '123 Fake Street'],
+			['Becky', '456 Fake Street'],
+		],
+	},
+}
 
-function getOnClick(rowNum: number) {
-	return () => console.log(`Row ${rowNum} on click`)
+export const WithOnClick: Story = {
+	args: {
+		header: ['Name', 'Address'],
+		rows: [
+			['Javi', '123 Fake Street'],
+			['Becky', '456 Fake Street'],
+		],
+		rowActions: [action('clicked'), action('clicked')],
+	},
 }

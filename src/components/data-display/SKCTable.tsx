@@ -10,9 +10,9 @@ export type SKCTableProps = {
 	fullWidth?: boolean
 }
 
-const SKCTable: FC<SKCTableProps> = ({ header: headerNames, rows: rowValues, rowActions: rowOnClick = [], fullWidth = false }) => {
+const SKCTable: FC<SKCTableProps> = ({ header, rows, rowActions = [], fullWidth = false }) => {
 	const createHeaderRow = useCallback((): JSX.Element => {
-		const columns = headerNames.map((header: string) => {
+		const columns = header.map((header: string) => {
 			return <TableCell key={header}>{header}</TableCell>
 		})
 
@@ -21,27 +21,27 @@ const SKCTable: FC<SKCTableProps> = ({ header: headerNames, rows: rowValues, row
 				{columns}
 			</TableRow>
 		)
-	}, [headerNames])
+	}, [header])
 
 	const createRows = useCallback((): JSX.Element[] => {
-		return rowValues.map((row: string[], index: number) => {
+		return rows.map((row: string[], index: number) => {
 			const columns: JSX.Element[] = row.map((columnValue: string) => {
 				return <TableCell key={columnValue}>{columnValue}</TableCell>
 			})
 
 			const rowKey = row.toString()
 
-			return rowOnClick.length === 0 ? (
+			return rowActions.length === 0 ? (
 				<TableRow className='no-hover' key={rowKey}>
 					{columns}
 				</TableRow>
 			) : (
-				<TableRow className='hover' key={rowKey} onClick={rowOnClick[index]}>
+				<TableRow className='hover' key={rowKey} onClick={rowActions[index]}>
 					{columns}
 				</TableRow>
 			)
 		})
-	}, [rowOnClick, rowValues])
+	}, [rowActions, rows])
 
 	return (
 		<TableContainer className={'table-container'} style={fullWidth ? { maxWidth: '100%', margin: '0' } : undefined} component={Box}>
