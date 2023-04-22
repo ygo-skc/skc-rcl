@@ -6,7 +6,7 @@ on:
       - release
 
 jobs:
-  unit-test:
+  deploy-sb:
     runs-on: ubuntu-latest
 
     steps:
