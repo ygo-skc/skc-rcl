@@ -2,6 +2,8 @@
 
 React component library that will be used by SKC sites.
 
+[![Build & Code Quality](https://github.com/ygo-skc/skc-rcl/actions/workflows/build-and-code-quality.yaml/badge.svg?branch=release)](https://github.com/ygo-skc/skc-rcl/actions/workflows/build-and-code-quality.yaml)
+
 ## StoryBook
 
 [![Deploy StoryBook](https://github.com/ygo-skc/skc-rcl/actions/workflows/deploy-storybook.yaml/badge.svg?branch=release)](https://github.com/ygo-skc/skc-rcl/actions/workflows/deploy-storybook.yaml)
