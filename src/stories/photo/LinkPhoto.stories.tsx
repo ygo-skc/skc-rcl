@@ -1,16 +1,17 @@
-import React from 'react'
-import LinkPhoto, { LinkPhotoProps } from '../../components/photo/LinkPhoto'
+import type { Meta, StoryObj } from '@storybook/react'
+import LinkPhoto from '../../components/photo/LinkPhoto'
 
-const Template = (args) => <LinkPhoto {...args} />
-
-export default {
-	title: 'Photo/LinkPhoto',
+const meta: Meta<typeof LinkPhoto> = {
+	title: 'Photo/Link Photo',
 	component: LinkPhoto,
+	args: {
+		imageSrc: 'https://images.thesupremekingscastle.com/cards/md/13256226.jpg',
+		imageName: 'Elemental HERO Spirit of Neos',
+		link: 'https://images.thesupremekingscastle.com/cards/md/13256226.jpg',
+	},
 }
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-	imageSrc: 'https://images.thesupremekingscastle.com/cards/md/13256226.jpg',
-	imageName: 'Elemental HERO Spirit of Neos',
-	link: 'https://images.thesupremekingscastle.com/cards/md/13256226.jpg',
-} as LinkPhotoProps
+type Story = StoryObj<typeof LinkPhoto>
+
+export const Default: Story = {}

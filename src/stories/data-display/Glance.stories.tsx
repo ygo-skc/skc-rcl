@@ -1,54 +1,38 @@
-import React from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import Glance from '../../components/data-display/Glance'
 
-import Glance, { GlanceProps } from '../../components/data-display/Glance'
-
-const Template = (args: GlanceProps) => <Glance {...args} />
-
-export default {
+const meta: Meta<typeof Glance> = {
 	title: 'Generic/Glance',
 	component: Glance,
-}
-
-export const Small = Template.bind({})
-Small.args = {
-	total: 30,
-	subject: 'Cards',
-	color: 'purple',
-	action: () => {
-		console.log('glance pressed')
+	args: {
+		total: 30,
+		subject: 'Active Members Currently Online',
+		color: 'purple',
+		action: action('Clicked!'),
 	},
-	variant: 'small',
 }
+export default meta
 
-export const Medium = Template.bind({})
-Medium.args = {
-	total: 30,
-	subject: 'Ban Lists',
-	color: 'purple',
-	action: () => {
-		console.log('glance pressed')
+type Story = StoryObj<typeof Glance>
+
+export const Small: Story = {
+	args: {
+		variant: 'small',
 	},
-	variant: 'medium',
 }
-
-export const Large = Template.bind({})
-Large.args = {
-	total: 30,
-	subject: 'Effected Countries',
-	color: 'purple',
-	action: () => {
-		console.log('glance pressed')
+export const Medium: Story = {
+	args: {
+		variant: 'medium',
 	},
-	variant: 'large',
 }
-
-export const FullWidth = Template.bind({})
-FullWidth.args = {
-	total: 30,
-	subject: 'Active Members Currently Online',
-	color: 'purple',
-	action: () => {
-		console.log('glance pressed')
+export const Large: Story = {
+	args: {
+		variant: 'large',
 	},
-	variant: 'full-width',
+}
+export const FullWidth: Story = {
+	args: {
+		variant: 'full-width',
+	},
 }

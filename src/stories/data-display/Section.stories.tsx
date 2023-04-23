@@ -1,20 +1,21 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import Section from '../../components/data-display/Section'
 import React from 'react'
 
-import Section, { SectionProps } from '../../components/data-display/Section'
-
-const Template = (args: SectionProps) => <Section {...args} />
-
-export default {
+const meta: Meta<typeof Section> = {
 	title: 'Generic/Section',
 	component: Section,
+	args: {
+		sectionName: 'Content',
+		children: (
+			<div>
+				<p>This is the content</p>
+			</div>
+		),
+	},
 }
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-	sectionName: 'Content',
-	children: (
-		<div>
-			<p>This is the content</p>
-		</div>
-	),
-}
+type Story = StoryObj<typeof Section>
+
+export const Default: Story = {}

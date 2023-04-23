@@ -1,15 +1,17 @@
-import React from 'react'
-
+import type { Meta, StoryObj } from '@storybook/react'
 import DateComponent from '../../components/data-display/DateComponent'
 
-const Template = (args) => <DateComponent {...args} />
-
-export default {
-	title: 'Generic/DateComponent',
+const meta: Meta<typeof DateComponent> = {
+	title: 'Generic/Date Component',
 	component: DateComponent,
+	args: {
+		month: 'Jan',
+		day: 25,
+		year: 2023,
+	},
 }
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-	date: new Date(),
-}
+type Story = StoryObj<typeof DateComponent>
+
+export const Default: Story = {}

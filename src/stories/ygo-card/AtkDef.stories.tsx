@@ -1,30 +1,28 @@
-import React from 'react'
-import AtkDef, { AtkDefProps } from '../../components/ygo-card/AtkDef'
+import type { Meta, StoryObj } from '@storybook/react'
+import AtkDef from '../../components/ygo-card/AtkDef'
 
-const Template = (args) => <AtkDef {...args} />
-
-export default {
-	title: 'Yugioh Card/Attack-Defense',
+const meta: Meta<typeof AtkDef> = {
+	title: 'Yugioh Card/Attack and Defense',
 	component: AtkDef,
+	args: {
+		monsterAtk: '2500',
+		monsterDef: '2000',
+		cardColor: 'Normal',
+	},
 }
+export default meta
 
-export const NormalMonster = Template.bind({})
-NormalMonster.args = {
-	monsterAtk: '2500',
-	monsterDef: '2000',
-	cardColor: 'Normal',
-} as AtkDefProps
+type Story = StoryObj<typeof AtkDef>
 
-export const NormalMonsterUndefinedStats = Template.bind({})
-NormalMonsterUndefinedStats.args = {
-	monsterAtk: undefined,
-	monsterDef: undefined,
-	cardColor: 'Normal',
-} as AtkDefProps
-
-export const LinkMonster = Template.bind({})
-LinkMonster.args = {
-	monsterAtk: '2500',
-	monsterDef: '2000',
-	cardColor: 'Link',
-} as AtkDefProps
+export const NormalMonster: Story = {}
+export const NormalMonsterUndefinedStats: Story = {
+	args: {
+		monsterAtk: undefined,
+		monsterDef: undefined,
+	},
+}
+export const LinkMonster: Story = {
+	args: {
+		cardColor: 'Link',
+	},
+}

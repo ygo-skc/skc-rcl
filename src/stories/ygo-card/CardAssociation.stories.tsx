@@ -1,82 +1,65 @@
-import React from 'react'
-import CardAssociation, { CardAssociationProps } from '../../components/ygo-card/CardAssociation'
+import type { Meta, StoryObj } from '@storybook/react'
+import CardAssociation from '../../components/ygo-card/CardAssociation'
 
-const Template = (args) => <CardAssociation {...args} />
-
-export default {
-	title: 'Yugioh Card/CardAssociation',
+const meta: Meta<typeof CardAssociation> = {
+	title: 'Yugioh Card/Card Association',
 	component: CardAssociation,
+	args: {
+		monsterAssociation: {
+			level: 4,
+		},
+		attribute: 'Wind',
+	},
+}
+export default meta
+
+type Story = StoryObj<typeof CardAssociation>
+
+export const Level: Story = {}
+export const Rank: Story = {
+	args: {
+		monsterAssociation: {
+			rank: 4,
+		},
+	},
+}
+export const Pendulum: Story = {
+	args: {
+		monsterAssociation: {
+			level: 4,
+			scaleRating: 10,
+		},
+	},
 }
 
-export const Level = Template.bind({})
-Level.args = {
-	monsterAssociation: {
-		level: 4,
+// Attributes
+export const Dark: Story = {
+	args: {
+		attribute: 'Dark',
 	},
-	attribute: 'Wind',
-} as CardAssociationProps
-
-export const Rank = Template.bind({})
-Rank.args = {
-	monsterAssociation: {
-		rank: 4,
+}
+export const Earth: Story = {
+	args: {
+		attribute: 'Earth',
 	},
-	attribute: 'Wind',
-} as CardAssociationProps
-
-export const Pendulum = Template.bind({})
-Pendulum.args = {
-	monsterAssociation: {
-		level: 4,
-		scaleRating: 10,
+}
+export const Fire: Story = {
+	args: {
+		attribute: 'Fire',
 	},
-	attribute: 'Wind',
-} as CardAssociationProps
-
-export const Dark = Template.bind({})
-Dark.args = {
-	monsterAssociation: {
-		level: 4,
+}
+export const Light: Story = {
+	args: {
+		attribute: 'Light',
 	},
-	attribute: 'Dark',
-} as CardAssociationProps
-
-export const Earth = Template.bind({})
-Earth.args = {
-	monsterAssociation: {
-		level: 4,
+}
+export const Water: Story = {
+	args: {
+		attribute: 'Water',
 	},
-	attribute: 'Earth',
-} as CardAssociationProps
-
-export const Fire = Template.bind({})
-Fire.args = {
-	monsterAssociation: {
-		level: 4,
+}
+export const Wind: Story = {
+	args: {
+		attribute: 'Wind',
 	},
-	attribute: 'Fire',
-} as CardAssociationProps
-
-export const Light = Template.bind({})
-Light.args = {
-	monsterAssociation: {
-		level: 4,
-	},
-	attribute: 'Light',
-} as CardAssociationProps
-
-export const Water = Template.bind({})
-Water.args = {
-	monsterAssociation: {
-		level: 4,
-	},
-	attribute: 'Water',
-} as CardAssociationProps
-
-export const Wind = Template.bind({})
-Wind.args = {
-	monsterAssociation: {
-		level: 4,
-	},
-	attribute: 'Wind',
-} as CardAssociationProps
+}
