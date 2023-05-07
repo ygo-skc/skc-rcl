@@ -1,6 +1,6 @@
 {
 	"name": "skc-rcl",
-	"version": "0.7.2",
+	"version": "0.7.3",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
@@ -66,11 +66,11 @@
 		"typescript": "5.0.4"
 	},
 	"peerDependencies": {
-		"@emotion/styled": "^11.10.6",
-		"@mui/material": "^5.11.13",
-		"@nivo/pie": "^0.81.0",
-		"react": "^18.2.0",
-		"react-visibility-sensor": "^5.1.1"
+		"@emotion/styled": ">=11.10.6",
+		"@mui/material": ">=5.11.13",
+		"@nivo/pie": ">=0.81.0",
+		"react": ">=18.2.0",
+		"react-visibility-sensor": ">=5.1.1"
 	},
 	"files": [
 		"dist"
