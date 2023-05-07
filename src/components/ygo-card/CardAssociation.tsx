@@ -41,13 +41,13 @@ const CardAssociation: FC<CardAssociationProps> = ({ monsterAssociation, attribu
 			case 'earth':
 				return <img src={earthImg} alt='Card Rank' className='base-img' />
 			case 'fire':
-				return <img src={fireImg} alt='Card Rank' className='pend-img' />
+				return <img src={fireImg} alt='Card Rank' className='base-img' />
 			case 'light':
-				return <img src={lightImg} alt='Card Rank' className='pend-img' />
+				return <img src={lightImg} alt='Card Rank' className='base-img' />
 			case 'water':
-				return <img src={waterImg} alt='Card Rank' className='pend-img' />
+				return <img src={waterImg} alt='Card Rank' className='base-img' />
 			case 'wind':
-				return <img src={windImg} alt='Card Rank' className='pend-img' />
+				return <img src={windImg} alt='Card Rank' className='base-img' />
 			case undefined:
 			default:
 				return undefined
