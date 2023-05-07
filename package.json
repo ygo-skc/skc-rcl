@@ -1,6 +1,6 @@
 {
 	"name": "skc-rcl",
-	"version": "0.7.0",
+	"version": "0.7.2",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
@@ -15,7 +15,8 @@
 		"build-storybook": "sb build",
 		"lint": "eslint src --ext .tsx",
 		"deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
-		"gh:deploy-storybook": "git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/ygo-skc/skc-rcl.git && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\""
+		"gh:deploy-storybook": "git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/ygo-skc/skc-rcl.git && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\"",
+		"ci:publish": "npm run build && npm publish"
 	},
 	"keywords": [
 		"skc",
@@ -38,7 +39,7 @@
 		"@babel/preset-typescript": "7.21.5",
 		"@emotion/styled": "11.11.0",
 		"@mui/material": "5.12.3",
-		"@nivo/pie": "0.82.1",
+		"@nivo/pie": "0.81.0",
 		"@rollup/plugin-babel": "6.0.3",
 		"@rollup/plugin-image": "3.0.2",
 		"@rollup/plugin-node-resolve": "15.0.2",
@@ -67,7 +68,7 @@
 	"peerDependencies": {
 		"@emotion/styled": "^11.10.6",
 		"@mui/material": "^5.11.13",
-		"@nivo/pie": "^0.82.1",
+		"@nivo/pie": "^0.81.0",
 		"react": "^18.2.0",
 		"react-visibility-sensor": "^5.1.1"
 	},
