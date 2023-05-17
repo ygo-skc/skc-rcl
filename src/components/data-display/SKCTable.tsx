@@ -56,7 +56,7 @@ const SKCTable: FC<SKCTableProps> = ({ header, rows, rowActions = [], fullWidth 
 export default memo(SKCTable, (prevProps, nextProps) => {
 	if (
 		prevProps.header.length !== nextProps.header.length ||
-		prevProps.rows.length !== nextProps.rows.length ||
+		prevProps.rows !== nextProps.rows ||
 		prevProps.rowActions?.length !== nextProps.rowActions?.length ||
 		prevProps.fullWidth !== nextProps.fullWidth
 	)
