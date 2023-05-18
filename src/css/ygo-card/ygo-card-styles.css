@@ -9,7 +9,7 @@
 }
 
 .normal-ygo-card-style {
-	background: linear-gradient(185deg, #f9a825, #fbc02d);
+	background: #efba4b;
 	color: #333 !important;
 }
 .normal-ygo-card-style-light {
@@ -18,16 +18,17 @@
 }
 
 .effect-ygo-card-style {
-	background: linear-gradient(185deg, #e65100 25%, #ff762b 85%);
+	background: #e16d33;
 	color: #fffbeb !important;
 }
+
 .effect-ygo-card-style-light {
 	background: rgba(255, 205, 132, 0.9);
 	color: #333 !important;
 }
 
 .ritual-ygo-card-style {
-	background: linear-gradient(185deg, #56b1fa 25%, #4e9fee 85%);
+	background: #51a7f3;
 	color: #fffbeb !important;
 }
 .ritual-ygo-card-style-light {
@@ -36,7 +37,7 @@
 }
 
 .fusion-ygo-card-style {
-	background: linear-gradient(185deg, #6c42b5 25%, #7e57c2 85%);
+	background: #7d57c2;
 	color: #fffbeb !important;
 }
 .fusion-ygo-card-style-light {
@@ -45,7 +46,7 @@
 }
 
 .synchro-ygo-card-style {
-	background: linear-gradient(180deg, #e0e0e0 10%, #bdbdbd 90%);
+	background: #d1d1d1;
 	color: #333 !important;
 }
 .synchro-ygo-card-style-light {
@@ -54,7 +55,7 @@
 }
 
 .xyz-ygo-card-style {
-	background: linear-gradient(180deg, #424242 30%, #212121 90%);
+	background: #424242;
 	color: #fffbeb !important;
 }
 .xyz-ygo-card-style-light {
@@ -63,16 +64,17 @@
 }
 
 .pendulum-normal-ygo-card-style {
-	background: linear-gradient(#f9c414 40%, #00cdb1 55%);
+	background: linear-gradient(#efba4b 40%, #03bfa5 55%);
 	color: #333 !important;
 }
+
 .pendulum-normal-ygo-card-style-light {
 	background: rgba(238, 248, 247, 0.8);
 	color: #333 !important;
 }
 
 .pendulum-effect-ygo-card-style {
-	background: linear-gradient(#ff6410 40%, #00cdb1 55%);
+	background: linear-gradient(#e16d33 40%, #03bfa5 55%);
 	color: #fffbeb !important;
 }
 .pendulum-effect-ygo-card-style-light {
@@ -81,7 +83,7 @@
 }
 
 .pendulum-ritual-ygo-card-style {
-	background: linear-gradient(#4e9fee 40%, #00cdb1 55%);
+	background: linear-gradient(#51a7f3 40%, #03bfa5 55%);
 	color: #fffbeb !important;
 }
 
@@ -91,7 +93,7 @@
 }
 
 .pendulum-fusion-ygo-card-style {
-	background: linear-gradient(#7e57c2 40%, #00cdb1 55%);
+	background: linear-gradient(#7d57c2 40%, #03bfa5 55%);
 	color: #fffbeb !important;
 }
 .pendulum-fusion-ygo-card-style-light {
@@ -100,7 +102,7 @@
 }
 
 .pendulum-xyz-ygo-card-style {
-	background: linear-gradient(#424242 40%, #00cdb1 55%);
+	background: linear-gradient(#424242 40%, #03bfa5 55%);
 	color: #fffbeb !important;
 }
 .pendulum-xyz-ygo-card-style-light {
@@ -109,34 +111,37 @@
 }
 
 .pendulum-synchro-ygo-card-style {
-	background: linear-gradient(#e0e0e0 40%, #00cdb1 55%);
+	background: linear-gradient(#d1d1d1 40%, #03bfa5 55%);
 	color: #333 !important;
 }
+
 .pendulum-synchro-ygo-card-style-light {
 	background: rgba(238, 248, 247, 0.8);
 	color: #333 !important;
 }
 
 .token-ygo-card-style {
-	background: linear-gradient(180deg, #757575 30%, #616161 90%);
+	background: #313131;
 	color: #fffbeb !important;
 }
+
 .token-ygo-card-style-light {
 	background: #bdbdbd;
 	color: #333 !important;
 }
 
 .link-ygo-card-style {
-	background: linear-gradient(45deg, #1976d2 30%, #1565c0 90%);
+	background: #1876d2;
 	color: #fffbeb !important;
 }
+
 .link-ygo-card-style-light {
 	background: #b3e5fc;
 	color: #333 !important;
 }
 
 .spell-ygo-card-style {
-	background: linear-gradient(45deg, #00bfa5 30%, #00ae96 90%);
+	background: #03bfa5;
 	color: #fffbeb !important;
 }
 
@@ -146,7 +151,7 @@
 }
 
 .trap-ygo-card-style {
-	background: linear-gradient(185deg, #ad1457 25%, #d81b60 85%);
+	background: #d01a5e;
 	color: #fffbeb !important;
 }
 
@@ -156,7 +161,7 @@
 }
 
 .err-ygo-card-style {
-	background: linear-gradient(315deg, #feae96 0%, #fe0944 74%);
+	background: #fe0944;
 	color: #fffbeb !important;
 }
 .err-ygo-card-style-light {
@@ -172,7 +177,6 @@
 #card-name {
 	margin-bottom: 0.25rem;
 	text-align: center;
-	text-transform: uppercase;
 	flex: 1;
 	color: inherit;
 }

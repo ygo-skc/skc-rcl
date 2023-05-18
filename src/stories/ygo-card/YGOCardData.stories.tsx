@@ -5,7 +5,7 @@ const meta: Meta<typeof YGOCardData> = {
 	title: 'Yugioh Card/Yugioh Card Data',
 	component: YGOCardData,
 	args: {
-		cardName: 'DARK MAGICIAN',
+		cardName: 'Dark Magician',
 		cardColor: 'Normal',
 		cardEffect: 'The ultimate wizard in terms of attack and defense.',
 		monsterType: 'Spellcaster/Normal',

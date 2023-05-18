@@ -14,7 +14,7 @@ const meta: Meta<typeof YGOCardWithPreviousBanStatus> = {
 	],
 	args: {
 		card: {
-			cardName: 'DARK MAGICIAN',
+			cardName: 'Dark Magician',
 			cardColor: 'Normal',
 			cardEffect: 'The ultimate wizard in terms of attack and defense.',
 			monsterType: 'Spellcaster/Normal',
