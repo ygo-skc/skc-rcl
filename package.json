@@ -12,6 +12,7 @@
 		"start": "sb dev -p 6006",
 		"build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
 		"test": "jest",
+		"test:i": "jest --watch",
 		"build-storybook": "sb build",
 		"lint": "eslint src --ext .tsx",
 		"deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
