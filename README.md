@@ -12,7 +12,7 @@ This repo has a corresponding StoryBook website that users can take advantage of
 
 ## Testing
 
-Jest is used to run Unit tests. There are many dependencies and used to achieve this and they will be explained below.
+Jest is used to run Unit tests. There are many dependencies used in testing and they will be explained below.
 
 | Library                           | Function           |
 | --------------------------------- | ------------------ |
