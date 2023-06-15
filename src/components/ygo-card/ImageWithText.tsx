@@ -10,9 +10,9 @@ export type ImageWithTextProps = {
 
 const ImageWithText: FC<ImageWithTextProps> = ({ imageComponent, text }) => {
 	return (
-		<div className='img-with-number-parent'>
+		<div data-testid='image-with-text-component' className='img-with-number-parent'>
 			{imageComponent}
-			<Typography variant='subtitle1' textAlign='center'>
+			<Typography data-testid='image-text' variant='subtitle1' textAlign='center'>
 				{text}
 			</Typography>
 		</div>

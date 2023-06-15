@@ -16,14 +16,14 @@ export type AtkDefProps = {
 
 const AtkDef: FC<AtkDefProps> = ({ monsterAtk, monsterDef, cardColor }) => {
 	return (
-		<div className='monster-stat-parent'>
-			<div className='monster-stat-sub-parent'>
-				<Typography className='monster-stat monster-attack-stat' variant='body1'>
+		<div data-testid='atk-def-component' className='monster-stat-parent'>
+			<div data-testid='atk-def-wrapper' className='monster-stat-sub-parent'>
+				<Typography data-testid='atk-text' className='monster-stat monster-attack-stat' variant='body1'>
 					{modifyStat(monsterAtk)}
 				</Typography>
 
 				{cardColor !== 'Link' ? (
-					<Typography className='monster-stat monster-defense-stat' variant='body1'>
+					<Typography data-testid='def-text' className='monster-stat monster-defense-stat' variant='body1'>
 						{modifyStat(monsterDef)}
 					</Typography>
 				) : undefined}
