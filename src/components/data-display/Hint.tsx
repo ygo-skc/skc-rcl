@@ -15,8 +15,8 @@ const Hint: FC<HintProps> = ({ children, backgroundColor = '#f6f2fb', textColor 
 	const className = fullWidth ? `hint-full-width hint-${variant}` : `hint hint-${variant}`
 	const typographyVariant = variant === 'tight' ? 'subtitle1' : 'h6'
 	return (
-		<div className={className} style={{ backgroundColor: backgroundColor }}>
-			<Typography className='hint-text' style={{ color: textColor }} variant={typographyVariant} align='center'>
+		<div data-testid='hint-component' className={className} style={{ backgroundColor: backgroundColor }}>
+			<Typography data-testid='hint-text' className='hint-text' style={{ color: textColor }} variant={typographyVariant} align='center'>
 				{children}
 			</Typography>
 		</div>
