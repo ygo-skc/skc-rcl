@@ -5,7 +5,7 @@ import '../../css/data-display/inline-date.css'
 
 const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 	return (
-		<div className='date-parent'>
+		<div className='inline-date '>
 			<Typography data-testid='date-component-month-text' variant='h5' align='center' className='month-text'>
 				{month}
 			</Typography>

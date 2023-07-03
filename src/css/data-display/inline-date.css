@@ -1,4 +1,4 @@
-.date-parent {
+.inline-date {
 	margin-bottom: 0rem;
 	border-radius: 1rem;
 	padding: 0rem;
@@ -8,7 +8,7 @@
 	align-items: center;
 }
 
-.month-text {
+.inline-date .month-text {
 	color: white !important;
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -17,7 +17,7 @@
 	background: #e42364;
 }
 
-.day-text {
+.inline-date .day-text {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	font-weight: 800;
