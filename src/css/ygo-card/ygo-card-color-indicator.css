@@ -1,0 +1,14 @@
+.indicator {
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.indicator.small {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.indicator.large {
+	height: 2rem;
+	width: 2rem;
+}

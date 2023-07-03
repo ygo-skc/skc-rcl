@@ -17,4 +17,5 @@ import YGOCardData from './components/ygo-card/YGOCardData.js'
 import YGOCard from './components/ygo-card/YGOCard.js'
 import YGOCardWithPreviousBanStatus from './components/ygo-card/YGOCardWithPreviousBanStatus.js'
 import YGOCardWithQuantity from './components/ygo-card/YGOCardWithQuantity.js'
-export { YGOCardData as YGOCard, YGOCard as YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity }
+import YGOCardColorIndicator from './components/ygo-card/YGOCardColorIndicator.js'
+export { YGOCardData as YGOCard, YGOCard as YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity, YGOCardColorIndicator }
