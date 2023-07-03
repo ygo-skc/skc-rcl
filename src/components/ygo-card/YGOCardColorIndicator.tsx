@@ -4,7 +4,7 @@ import '../../css/ygo-card/ygo-card-styles.css'
 
 export type YGOCardColorIndicatorProps = {
 	cardColor: cardColor
-	variant: 'small' | 'large'
+	variant?: 'small' | 'large'
 }
 
 const YGOCardColorIndicator: FC<YGOCardColorIndicatorProps> = ({ cardColor, variant = 'small' }) => {
