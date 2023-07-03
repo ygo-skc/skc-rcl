@@ -40,3 +40,9 @@ declare type SKCCard = {
 }
 
 declare type CardAttribute = 'dark' | 'earth' | 'fire' | 'light' | 'water' | 'wind' | undefined
+
+declare type DateProps = {
+	month: string
+	day: number
+	year: number
+}

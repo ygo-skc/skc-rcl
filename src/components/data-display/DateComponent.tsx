@@ -3,12 +3,6 @@ import { Typography } from '@mui/material'
 
 import '../../css/data-display/date-component.css'
 
-type DateProps = {
-	month: string
-	day: number
-	year: number
-}
-
 const DateComponent: FC<DateProps> = ({ month, day, year }) => {
 	return (
 		<div className='date-parent'>
