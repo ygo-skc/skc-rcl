@@ -60,11 +60,7 @@
 	padding-bottom: 2rem;
 }
 
-.multi-section:not(:first-child):not(:last-child) {
+.multi-section:not(:first-child) {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-}
-
-.multi-section:last-child {
-	padding-top: 2rem;
 }
