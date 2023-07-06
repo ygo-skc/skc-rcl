@@ -1,28 +1,21 @@
 import React, { FC } from 'react'
 import { Typography } from '@mui/material'
 
-import { Dates } from '../../helper/Dates'
-
 import '../../css/data-display/date-component.css'
 
-type DateProps = {
-	date: Date
-}
-
-const DateComponent: FC<DateProps> = ({ date }) => {
+const DateComponent: FC<DateProps> = ({ month, day, year }) => {
 	return (
 		<div className='date-parent'>
-			<div className='month-container'>
-				<Typography variant='h6' align='center' className='month-text'>
-					{Dates.getMonth(date)}
-				</Typography>
-			</div>
-
-			<Typography align='center' variant='h3' className='day-text'>
-				{Dates.getDay(date)}
+			<Typography data-testid='date-component-month-text' variant='h6' align='center' className='month-text'>
+				{month}
 			</Typography>
-			<Typography align='center' variant='subtitle2' className='year-text'>
-				{Dates.getYear(date)}
+
+			<Typography data-testid='date-component-day-text' align='center' variant='h3' className='day-text'>
+				{day}
+			</Typography>
+
+			<Typography data-testid='date-component-year-text' align='center' variant='subtitle2' className='year-text'>
+				{year}
 			</Typography>
 		</div>
 	)

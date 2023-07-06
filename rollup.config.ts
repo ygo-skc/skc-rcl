@@ -6,6 +6,7 @@ import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import { RollupOptions } from 'rollup'
+import image from '@rollup/plugin-image'
 
 export default [
 	{
@@ -28,19 +29,20 @@ export default [
 				plugins: [],
 				minimize: true,
 			}),
+			image(),
 			typescript({ tsconfig: './tsconfig.json' }),
 			babel({ exclude: 'node_modules/**', presets: ['@babel/preset-react'] }),
 			resolve(),
 			external(),
 			terser(),
 		],
-		external: ['react', 'react-dom', 'styled-components', '@mui/material', '@nivo/pie', '@emotion/react', '@emotion/styled'],
+		external: ['react', 'react-dom', 'styled-components', '@mui/material', '@nivo/pie', '@emotion/react', '@emotion/styled', 'react-visibility-sensor'],
 	},
 	// expose types
 	{
 		input: 'src/index.ts',
 		output: [{ file: 'dist/index.d.ts', format: 'es' }],
-		external: [/\.css$/], // omit css imports
+		external: [/\.css$/, /\.svg$/], // omit non-ts imports
 		plugins: [dts()],
 	},
 ] as RollupOptions

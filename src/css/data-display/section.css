@@ -18,11 +18,11 @@
 }
 
 .ban-list-section-header-container {
-	background: linear-gradient(315deg, #fe3d58, #fe5f75 74%);
+	background: #fe3d58;
 }
 
 .product-section-header-container {
-	background: linear-gradient(326deg, #a4508b 0%, #763a64 74%);
+	background: #a4508b;
 }
 
 .section-header-text {
@@ -39,8 +39,8 @@
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	background: white;
-	border-bottom-left-radius: 2rem;
-	border-bottom-right-radius: 2rem;
+	border-bottom-left-radius: 1.75rem;
+	border-bottom-right-radius: 1.75rem;
 }
 
 .default-border {
@@ -60,11 +60,7 @@
 	padding-bottom: 2rem;
 }
 
-.multi-section:not(:first-child):not(:last-child) {
+.multi-section:not(:first-child) {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-}
-
-.multi-section:last-child {
-	padding-top: 2rem;
 }

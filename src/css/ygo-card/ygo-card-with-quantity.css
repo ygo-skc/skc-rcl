@@ -1,0 +1,14 @@
+.quantity-chip {
+	background: rgba(107, 52, 91, 0.8);
+	margin: 0;
+	float: right;
+}
+
+.quantity-text-container {
+	min-width: 55%;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+}

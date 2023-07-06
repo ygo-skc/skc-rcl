@@ -9,14 +9,14 @@ export type GenericNonBreakingErrProps = {
 
 const GenericNonBreakingErr: FC<GenericNonBreakingErrProps> = ({ errExplanation }): ReactElement => {
 	return (
-		<div className='error-parent'>
-			<Typography className='error-icon-text' align='center' variant='h5'>
+		<div data-testid='generic-non-breaking-err-component' className='error-parent'>
+			<Typography data-testid='generic-non-breaking-err-component-icon' className='error-icon-text' align='center' variant='h5'>
 				⚠️
 			</Typography>
-			<Typography align='center' variant='h5'>
+			<Typography data-testid='generic-non-breaking-err-component-header' align='center' variant='h5'>
 				There Was An Error Fetching Required Data
 			</Typography>
-			<Typography align='center' variant='h6'>
+			<Typography data-testid='generic-non-breaking-err-component-sub-header' align='center' variant='h6'>
 				{errExplanation}
 			</Typography>
 		</div>

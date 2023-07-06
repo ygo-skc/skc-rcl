@@ -4,30 +4,25 @@
 	border-radius: 1rem;
 	padding: 0rem;
 	background: #f5f5f5;
-	min-width: 7rem;
-	max-width: 7rem;
+	width: 7rem;
 }
 
-.month-container {
-	color: white;
+.date-parent .month-text {
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 	background: #e42364;
-}
-
-.month-text {
-	color: inherit;
+	color: white;
 	padding-left: 0.25rem;
 	padding-right: 0.25rem;
 	padding-top: 0.2rem;
 	margin-bottom: 0.05rem;
 }
 
-.day-text {
+.date-parent .day-text {
 	font-weight: 800;
 	margin-bottom: 0rem;
 }
 
-.year-text {
+.date-parent .year-text {
 	margin-bottom: 0rem;
 }

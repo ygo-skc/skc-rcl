@@ -34,11 +34,6 @@ labels:
   - name: feature
     color: 336699
 
-milestones:
-  - title: Operation Perfect Release
-    description: Get final non beta release as perfect as possible.
-    state: open
-
 # Collaborators: give specific users access to this repository.
 collaborators:
   - username: rtomyj

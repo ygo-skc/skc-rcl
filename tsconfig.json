@@ -3,7 +3,7 @@
 		"esModuleInterop": true,
 		"strict": true,
 		"skipLibCheck": true,
-		"jsx": "react",
+		"jsx": "react-jsx",
 		"module": "ESNext",
 		"declaration": false,
 		// if declaration is true, you can comment below. This will expose .d.ts files for all .ts files - however this isn't necessary as rollup is using dts plugin

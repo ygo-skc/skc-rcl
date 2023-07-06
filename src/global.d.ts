@@ -1,3 +1,5 @@
+declare module '*.svg'
+
 declare type cardColor =
 	| 'normal'
 	| 'effect'
@@ -16,3 +18,31 @@ declare type cardColor =
 	| 'trap'
 	| 'err'
 	| undefined
+
+declare type SKCMonsterAssociation = {
+	level: number
+	rank: number
+	scaleRating: number
+	linkRating: number
+	linkArrows: string[]
+}
+
+declare type SKCCard = {
+	cardID: string
+	cardName: string
+	cardColor: cardColor
+	cardAttribute?: CardAttribute
+	monsterType?: string
+	monsterAssociation?: SKCMonsterAssociation
+	monsterAttack?: string
+	monsterDefense?: string
+	cardEffect: string
+}
+
+declare type CardAttribute = 'dark' | 'earth' | 'fire' | 'light' | 'water' | 'wind' | undefined
+
+declare type DateProps = {
+	month: string
+	day: number
+	year: number
+}

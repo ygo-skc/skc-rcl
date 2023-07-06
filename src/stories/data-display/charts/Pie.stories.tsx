@@ -1,34 +1,34 @@
-import React from 'react'
+import type { Meta, StoryObj } from '@storybook/react'
+import Pie from '../../../components/data-display/charts/Pie'
 
-import Pie, { PieProps } from '../../../components/data-display/charts/Pie'
-
-const Template = (args: PieProps) => <Pie {...args} />
-
-export default {
+const meta: Meta<typeof Pie> = {
 	title: 'Charts/Pie',
 	component: Pie,
+	args: {
+		data: [
+			{
+				id: 'Monsters',
+				label: 'Monsters',
+				value: 20,
+			},
+			{
+				id: 'Spells',
+				label: 'Spells',
+				value: 15,
+			},
+			{
+				id: 'Traps',
+				label: 'Traps',
+				value: 5,
+			},
+		],
+		statName: 'Deck List Spread',
+		legendTextColor: 'black',
+		isDataLoaded: true,
+	},
 }
+export default meta
 
-export const Default = Template.bind({})
-Default.args = {
-	data: [
-		{
-			id: 'Monsters',
-			label: 'Monsters',
-			value: 20,
-		},
-		{
-			id: 'Spells',
-			label: 'Spells',
-			value: 15,
-		},
-		{
-			id: 'Traps',
-			label: 'Traps',
-			value: 5,
-		},
-	],
-	statName: 'Deck List Spread',
-	legendTextColor: 'black',
-	isDataLoaded: true,
-} as PieProps
+type Story = StoryObj<typeof Pie>
+
+export const Default: Story = {}
