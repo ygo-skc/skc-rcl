@@ -63,3 +63,8 @@ export const Wind: Story = {
 		attribute: 'Wind',
 	},
 }
+export const Divine: Story = {
+	args: {
+		attribute: 'Divine',
+	},
+}

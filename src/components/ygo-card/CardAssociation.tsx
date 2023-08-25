@@ -11,6 +11,7 @@ import fireImg from '../../img/fire.svg'
 import lightImg from '../../img/light.svg'
 import waterImg from '../../img/water.svg'
 import windImg from '../../img/wind.svg'
+import divineImg from '../../img/divine.svg'
 
 import '../../css/ygo-card/card-association.css'
 
@@ -37,17 +38,19 @@ const CardAssociation: FC<CardAssociationProps> = ({ monsterAssociation, attribu
 	const getAttributeImage = (attribute: CardAttribute): ReactElement | undefined => {
 		switch (attribute) {
 			case 'dark':
-				return <img src={darkImg} alt='Card Level' className='base-img' />
+				return <img src={darkImg} alt='Dark Attribute' className='base-img' />
 			case 'earth':
-				return <img src={earthImg} alt='Card Rank' className='base-img' />
+				return <img src={earthImg} alt='Earth Attribute' className='base-img' />
 			case 'fire':
-				return <img src={fireImg} alt='Card Rank' className='base-img' />
+				return <img src={fireImg} alt='Fire Attribute' className='base-img' />
 			case 'light':
-				return <img src={lightImg} alt='Card Rank' className='base-img' />
+				return <img src={lightImg} alt='Light Attribute' className='base-img' />
 			case 'water':
-				return <img src={waterImg} alt='Card Rank' className='base-img' />
+				return <img src={waterImg} alt='Water Attribute' className='base-img' />
 			case 'wind':
-				return <img src={windImg} alt='Card Rank' className='base-img' />
+				return <img src={windImg} alt='Wind Attribute' className='base-img' />
+			case 'divine':
+				return <img src={divineImg} alt='Divine Attribute' className='base-img' />
 			case undefined:
 			default:
 				return undefined
