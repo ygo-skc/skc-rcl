@@ -39,7 +39,7 @@ declare type SKCCard = {
 	cardEffect: string
 }
 
-declare type CardAttribute = 'dark' | 'earth' | 'fire' | 'light' | 'water' | 'wind' | undefined
+declare type CardAttribute = 'dark' | 'earth' | 'fire' | 'light' | 'water' | 'wind' | 'divine' | undefined
 
 declare type DateProps = {
 	month: string
