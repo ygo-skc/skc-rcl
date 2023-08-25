@@ -8,6 +8,7 @@ const meta: Meta<typeof YGOCardData> = {
 		cardName: 'Dark Magician',
 		cardColor: 'Normal',
 		cardEffect: 'The ultimate wizard in terms of attack and defense.',
+		cardAttribute: 'Dark',
 		monsterType: 'Spellcaster/Normal',
 		monsterAssociation: {
 			level: '7',
