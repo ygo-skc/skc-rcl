@@ -6,11 +6,11 @@ import '../../css/data-display/inline-date.css'
 const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 	return (
 		<div className='inline-date'>
-			<Typography data-testid='date-component-month-text' variant='h6' className='text month-text'>
+			<Typography data-testid='date-component-month-text' variant='subtitle1' className='text month-text'>
 				{month}
 			</Typography>
 
-			<Typography data-testid='date-component-day-text' variant='h6' className='text day-text'>
+			<Typography data-testid='date-component-day-text' variant='subtitle1' className='text day-text'>
 				{day},
 			</Typography>
 
