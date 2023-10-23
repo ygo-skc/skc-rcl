@@ -15,3 +15,9 @@ export default meta
 type Story = StoryObj<typeof DateComponent>
 
 export const Default: Story = {}
+
+export const Condensed: Story = {
+	args: {
+		variant: 'condensed',
+	},
+}
