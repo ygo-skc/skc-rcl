@@ -32,7 +32,8 @@
 		"react-inspector": "6.0.2",
 		"react-element-to-jsx-string": "15.0.0",
 		"@mdx-js/react": "2.3.0",
-		"d3-color": "3.1.0"
+		"d3-color": "3.1.0",
+		"@babel/traverse": "7.23.2"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.23.2",
