@@ -3,6 +3,12 @@ import { Typography } from '@mui/material'
 
 import '../../css/data-display/inline-date.css'
 
+export type DateProps = {
+	month: string
+	day: number
+	year: number
+}
+
 const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 	return (
 		<div className='inline-date'>

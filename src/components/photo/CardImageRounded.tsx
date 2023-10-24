@@ -19,7 +19,7 @@ const CardImageRounded: FC<CardImageRoundedProps> = ({ cardImg, defaultVisibilit
 	return (
 		<VizSensor partialVisibility offset={{ bottom: -350, top: -200 }} onChange={handleVisibility}>
 			<div id='rounded-img-outer-container'>
-				<div id='rounded-img-inner-container'>{visible ? <img loading='lazy' src={cardImg} id='rounded-img' width='100%' height='100%' alt={`Card`} /> : undefined}</div>
+				<div id='rounded-img-inner-container'>{visible ? <img src={cardImg} id='rounded-img' width='100%' height='100%' alt={`Card`} /> : undefined}</div>
 			</div>
 		</VizSensor>
 	)
