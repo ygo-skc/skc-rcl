@@ -1,6 +1,4 @@
 .date-parent {
-	margin: auto;
-	margin-bottom: 0rem;
 	border-radius: 1rem;
 	padding: 0rem;
 	background: #f5f5f5;
@@ -8,7 +6,7 @@
 }
 
 .date-parent-condensed {
-	width: 5rem;
+	width: 5.5rem;
 }
 
 .date-parent .month-text {
