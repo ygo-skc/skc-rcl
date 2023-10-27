@@ -39,4 +39,10 @@ declare type SKCCard = {
 	cardEffect: string
 }
 
+declare type PieData = {
+	id: string
+	label: string
+	value: number
+}
+
 declare type CardAttribute = 'dark' | 'earth' | 'fire' | 'light' | 'water' | 'wind' | 'divine' | undefined
