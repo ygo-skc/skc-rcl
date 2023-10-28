@@ -17,7 +17,7 @@ const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 			</Typography>
 
 			<Typography data-testid='date-component-day-text' variant='subtitle1' className='text day-text'>
-				{day},
+				{day}
 			</Typography>
 
 			<Typography data-testid='date-component-year-text' variant='subtitle1' className='text year-text'>

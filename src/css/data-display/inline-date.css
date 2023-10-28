@@ -18,6 +18,7 @@
 	padding-left: 0.5rem;
 	padding-right: 0.25rem;
 	font-weight: 800;
+	width: 2ch;
 }
 
 .inline-date .year-text {
