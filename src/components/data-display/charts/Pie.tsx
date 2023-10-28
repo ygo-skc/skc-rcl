@@ -4,14 +4,8 @@ import React, { FC } from 'react'
 
 import '../../../css/data-display/charts/pie.css'
 
-export type data = {
-	id: string
-	label: string
-	value: number
-}
-
 export type PieProps = {
-	data: data[]
+	data: PieData[]
 	statName: string
 	legendTextColor: 'white' | 'black'
 	isDataLoaded: boolean
