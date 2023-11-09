@@ -33,12 +33,12 @@
 		"react-element-to-jsx-string": "15.0.0",
 		"@mdx-js/react": "3.0.0",
 		"d3-color": "3.1.0",
-		"@babel/traverse": "7.23.2"
+		"@babel/traverse": "7.23.3"
 	},
 	"devDependencies": {
-		"@babel/preset-env": "7.23.2",
-		"@babel/preset-react": "7.22.15",
-		"@babel/preset-typescript": "7.23.2",
+		"@babel/preset-env": "7.23.3",
+		"@babel/preset-react": "7.23.3",
+		"@babel/preset-typescript": "7.23.3",
 		"@emotion/styled": "11.11.0",
 		"@mui/material": "5.14.17",
 		"@nivo/pie": "0.83.0",
