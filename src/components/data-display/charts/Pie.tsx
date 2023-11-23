@@ -13,6 +13,12 @@ export type PieProps = {
 
 const Pie: FC<PieProps> = ({ data, statName, legendTextColor = 'white', isDataLoaded }) => {
 	const margin = 10
+	const fontFamily = 'open sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji'
+	const textStyle = {
+		fontSize: 12,
+		fontFamily: fontFamily,
+	}
+
 	return (
 		<div className='pie-parent group-dark'>
 			<Typography style={{ color: legendTextColor }} className='pie-header' variant='h2' align='center'>
@@ -32,8 +38,22 @@ const Pie: FC<PieProps> = ({ data, statName, legendTextColor = 'white', isDataLo
 						layers={['arcs', 'legends', 'arcLabels']}
 						colors={{ scheme: 'pastel2' }}
 						theme={{
-							fontSize: 12,
-							fontFamily: 'open sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji',
+							text: textStyle,
+							legends: {
+								text: textStyle,
+								title: {
+									text: textStyle,
+								},
+								ticks: {
+									text: textStyle,
+								},
+							},
+							tooltip: {
+								container: {
+									fontSize: 13,
+									fontFamily: fontFamily,
+								},
+							},
 						}}
 						legends={[
 							{
