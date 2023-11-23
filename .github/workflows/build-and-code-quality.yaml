@@ -30,6 +30,9 @@ jobs:
         run: npm run fresh-install
 
       - name: Run Unit Tests
+        run: npm run test
+
+      - name: Test Build
         run: npm run build && npm run build-storybook
 
       - name: Check Syntax (ES Lint)

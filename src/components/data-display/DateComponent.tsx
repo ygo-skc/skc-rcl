@@ -7,12 +7,12 @@ export type DateProps = {
 	month: string
 	day: number
 	year: number
-	variant: 'normal' | 'condensed'
+	variant?: 'normal' | 'condensed'
 }
 
 const DateComponent: FC<DateProps> = ({ month, day, year, variant = 'normal' }) => {
 	return (
-		<div className={variant === 'normal' ? 'date-parent' : 'date-parent date-parent-condensed'}>
+		<div data-testid='date-component-parent' className={variant === 'normal' ? 'date-parent' : 'date-parent date-parent-condensed'}>
 			<Typography data-testid='date-component-month-text' variant={variant === 'normal' ? 'h6' : 'subtitle1'} align='center' className='month-text'>
 				{month}
 			</Typography>
