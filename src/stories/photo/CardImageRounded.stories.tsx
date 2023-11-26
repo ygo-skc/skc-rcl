@@ -13,7 +13,8 @@ const meta: Meta<typeof CardImageRounded> = {
 		),
 	],
 	args: {
-		cardImg: 'https://images.thesupremekingscastle.com/cards/md/13256226.jpg',
+		cardID: '13256226',
+		variant: 'md',
 	},
 }
 export default meta

@@ -9,7 +9,7 @@ export type YGOCardProps = {
 const YGOCard: FC<YGOCardProps> = ({ card }) => {
 	return (
 		<Fragment>
-			<CardImageRounded cardImg={`https://images.thesupremekingscastle.com/cards/x-sm/${card.cardID}.jpg`} />
+			<CardImageRounded cardID={card.cardID} variant='x-sm' />
 
 			<YGOCardData
 				cardName={card.cardName}

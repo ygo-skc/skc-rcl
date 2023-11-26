@@ -14,7 +14,7 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 	return (
 		<div onClick={() => window.location.assign(`/card/${card.cardID}`)} className='ygo-card-info-parent'>
 			<div className='img-and-previous-status-parent'>
-				<CardImageRounded cardImg={`https://images.thesupremekingscastle.com/cards/tn/${card.cardID}.jpg`} />
+				<CardImageRounded cardID={card.cardID} variant='tn' />
 				<div className='ban-list-status-change-text-parent'>
 					<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
 						Previously
