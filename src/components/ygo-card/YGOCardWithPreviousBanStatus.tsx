@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import React, { FC } from 'react'
+import React, { FC, useCallback } from 'react'
 import CardImageRounded from '../photo/CardImageRounded'
 import YGOCardData from './YGOCardData'
 
@@ -11,8 +11,21 @@ export type YGOCardWithPreviousBanStatusProps = {
 }
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
+	const cardClickCB = useCallback(() => {
+		window.location.assign(`/card/${card.cardID}`)
+	}, [card])
+
+	const keyClickedCB = useCallback(
+		(event: React.KeyboardEvent<HTMLDivElement>) => {
+			if (event.key == 'Enter') {
+				cardClickCB()
+			}
+		},
+		[cardClickCB]
+	)
+
 	return (
-		<div onClick={() => window.location.assign(`/card/${card.cardID}`)} className='ygo-card-info-parent'>
+		<div onClick={cardClickCB} onKeyDown={keyClickedCB} className='ygo-card-info-parent'>
 			<div className='img-and-previous-status-parent'>
 				<CardImageRounded cardID={card.cardID} variant='tn' />
 				<div className='ban-list-status-change-text-parent'>
