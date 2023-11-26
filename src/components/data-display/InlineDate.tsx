@@ -11,7 +11,7 @@ export type DateProps = {
 
 const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 	return (
-		<div className='inline-date'>
+		<div data-testid='date-component-parent' className='inline-date'>
 			<Typography data-testid='date-component-month-text' variant='subtitle1' className='text month-text'>
 				{month}
 			</Typography>
