@@ -4,7 +4,7 @@ import VizSensor from 'react-visibility-sensor'
 
 export type CardImageRoundedProps = {
 	cardID: string
-	variant: 'original' | 'large' | 'md' | 'sm' | 'x-sm' | 'tn'
+	variant: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
 	defaultVisibility?: boolean
 }
 
