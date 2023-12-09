@@ -14,7 +14,7 @@ const YGOCardWithQuantity: FC<YGOCardWithQuantityProps> = ({ card, occurrences }
 	return (
 		<Fragment>
 			<div className='header'>
-				<CardImageRounded cardID={card.cardID} variant='tn' />
+				<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
 				<div className='quantity-text-container'>
 					<Chip className='quantity-chip' key={card.cardID} label={`${occurrences} Reference(s)`} />
 				</div>

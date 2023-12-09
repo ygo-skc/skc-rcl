@@ -4,12 +4,13 @@ import CardImageRounded from '../photo/CardImageRounded'
 
 export type YGOCardProps = {
 	card: SKCCard
+	imgLoadingType: 'lazy' | 'eager'
 }
 
-const YGOCard: FC<YGOCardProps> = ({ card }) => {
+const YGOCard: FC<YGOCardProps> = ({ card, imgLoadingType }) => {
 	return (
 		<Fragment>
-			<CardImageRounded cardID={card.cardID} variant='x-sm' />
+			<CardImageRounded cardID={card.cardID} variant='x-sm' loading={imgLoadingType} />
 
 			<YGOCardData
 				cardName={card.cardName}

@@ -11,8 +11,9 @@ import Pie from './components/data-display/charts/Pie.js'
 export { Pie }
 
 import CardImageRounded from './components/photo/CardImageRounded.js'
+import ProductImage from './components/photo/ProductImage.js'
 import LinkPhoto from './components/photo/LinkPhoto.js'
-export { CardImageRounded, LinkPhoto }
+export { CardImageRounded, LinkPhoto, ProductImage }
 
 import YGOCardData from './components/ygo-card/YGOCardData.js'
 import YGOCard from './components/ygo-card/YGOCard.js'

@@ -27,7 +27,7 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 	return (
 		<div onClick={cardClickCB} onKeyDown={keyClickedCB} className='ygo-card-info-parent'>
 			<div className='img-and-previous-status-parent'>
-				<CardImageRounded cardID={card.cardID} variant='tn' />
+				<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
 				<div className='ban-list-status-change-text-parent'>
 					<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
 						Previously
