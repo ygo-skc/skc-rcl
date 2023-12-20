@@ -4,9 +4,10 @@ export type ProductImageProps = {
 	productID: string
 	variant: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
 	loading?: 'lazy' | 'eager'
+	className?: string
 }
 
-const ProductImage: FC<ProductImageProps> = ({ productID, variant, loading = 'eager' }) => {
+const ProductImage: FC<ProductImageProps> = ({ productID, variant, className, loading = 'eager' }) => {
 	const onErrorCB = useCallback(
 		(e: SyntheticEvent<HTMLImageElement, Event>) => {
 			e.currentTarget.src = 'https://images.thesupremekingscastle.com/products/tn/RA01.png' // TODO: update me
@@ -15,16 +16,15 @@ const ProductImage: FC<ProductImageProps> = ({ productID, variant, loading = 'ea
 	)
 
 	return (
-		<div>
-			<img
-				loading={loading}
-				src={`https://images.thesupremekingscastle.com/products/${variant}/${productID}.png`}
-				onError={onErrorCB}
-				width='100%'
-				height='auto'
-				alt={`${productID} Image`}
-			/>
-		</div>
+		<img
+			className={className}
+			loading={loading}
+			src={`https://images.thesupremekingscastle.com/products/${variant}/${productID}.png`}
+			onError={onErrorCB}
+			width='100%'
+			height='auto'
+			alt={`${productID} Image`}
+		/>
 	)
 }
 
