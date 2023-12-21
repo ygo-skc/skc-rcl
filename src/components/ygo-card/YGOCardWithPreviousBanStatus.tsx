@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import React, { FC, useCallback } from 'react'
+import React, { FC } from 'react'
 import CardImageRounded from '../photo/CardImageRounded'
 import YGOCardData from './YGOCardData'
 
