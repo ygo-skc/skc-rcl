@@ -23,7 +23,7 @@ const LinkPhoto: FC<LinkPhotoProps> = ({ imageSrc, imageName, link }) => {
 		[imgClickCB]
 	)
 
-	return <img className='generic-link-photo' alt={`${imageName} - Click To Navigate To ${link}`} src={imageSrc} onClick={imgClickCB} onKeyDown={keyClickedCB} />
+	return <img role='presentation' className='generic-link-photo' alt={`${imageName} - Click To Navigate To ${link}`} src={imageSrc} onClick={imgClickCB} onKeyDown={keyClickedCB} />
 }
 
 export default LinkPhoto

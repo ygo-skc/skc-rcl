@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import Glance from '../../components/data-display/Glance'
+import Tile from '../../components/data-display/Tile'
 
-const meta: Meta<typeof Glance> = {
-	title: 'Generic/Glance',
-	component: Glance,
+const meta: Meta<typeof Tile> = {
+	title: 'Generic/Tile',
+	component: Tile,
 	args: {
 		total: 30,
 		subject: 'Active Members Currently Online',
@@ -14,7 +14,7 @@ const meta: Meta<typeof Glance> = {
 }
 export default meta
 
-type Story = StoryObj<typeof Glance>
+type Story = StoryObj<typeof Tile>
 
 export const Small: Story = {
 	args: {

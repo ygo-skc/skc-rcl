@@ -11,44 +11,33 @@ export type YGOCardWithPreviousBanStatusProps = {
 }
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
-	const cardClickCB = useCallback(() => {
-		window.location.assign(`/card/${card.cardID}`)
-	}, [card])
-
-	const keyClickedCB = useCallback(
-		(event: React.KeyboardEvent<HTMLDivElement>) => {
-			if (event.key == 'Enter') {
-				cardClickCB()
-			}
-		},
-		[cardClickCB]
-	)
-
 	return (
-		<div onClick={cardClickCB} onKeyDown={keyClickedCB} className='ygo-card-info-parent'>
-			<div className='img-and-previous-status-parent'>
-				<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
-				<div className='ban-list-status-change-text-parent'>
-					<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
-						Previously
-					</Typography>
-					<Typography align='right' variant='h6' className='ban-list-status-change-text-2'>
-						{previousBanStatus}
-					</Typography>
+		<div className='ygo-card-info-parent'>
+			<a href={`/card/${card.cardID}`}>
+				<div className='img-and-previous-status-parent'>
+					<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
+					<div className='ban-list-status-change-text-parent'>
+						<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
+							Previously
+						</Typography>
+						<Typography align='right' variant='h6' className='ban-list-status-change-text-2'>
+							{previousBanStatus}
+						</Typography>
+					</div>
 				</div>
-			</div>
-			<YGOCardData
-				cardID={card.cardID}
-				cardName={card.cardName}
-				cardColor={card.cardColor}
-				cardEffect={card.cardEffect}
-				monsterType={card.monsterType}
-				cardAttribute={card.cardAttribute}
-				monsterAttack={card.monsterAttack}
-				monsterDefense={card.monsterDefense}
-				monsterAssociation={card.monsterAssociation}
-				fullDetails={false}
-			/>
+				<YGOCardData
+					cardID={card.cardID}
+					cardName={card.cardName}
+					cardColor={card.cardColor}
+					cardEffect={card.cardEffect}
+					monsterType={card.monsterType}
+					cardAttribute={card.cardAttribute}
+					monsterAttack={card.monsterAttack}
+					monsterDefense={card.monsterDefense}
+					monsterAssociation={card.monsterAssociation}
+					fullDetails={false}
+				/>
+			</a>
 		</div>
 	)
 }

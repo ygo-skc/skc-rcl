@@ -1,4 +1,4 @@
-.glance {
+.tile {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: 2rem;
@@ -24,16 +24,16 @@
 	width: 100%;
 }
 
-.glance:hover {
+.tile:hover {
 	cursor: pointer;
 	transform: scale(1.04);
 }
 
-.glance-prominent-text {
+.tile-prominent-text {
 	margin-bottom: 0.2rem;
 	color: #444;
 }
 
-.glance-secondary-text {
+.tile-secondary-text {
 	margin-bottom: 0rem;
 }

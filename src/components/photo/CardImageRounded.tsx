@@ -20,12 +20,13 @@ const CardImageRounded: FC<CardImageRoundedProps> = ({ cardID, variant, loading 
 			<div id='rounded-img-inner-container'>
 				<img
 					loading={loading}
+					role='presentation'
 					src={`https://images.thesupremekingscastle.com/cards/${variant}/${cardID}.jpg`}
 					onError={onErrorCB}
 					id='rounded-img'
 					width='100%'
 					height='100%'
-					alt={`Card`}
+					alt={`Card - ${cardID}`}
 				/>
 			</div>
 		</div>

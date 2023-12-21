@@ -18,12 +18,13 @@ const ProductImage: FC<ProductImageProps> = ({ productID, variant, className, lo
 	return (
 		<img
 			className={className}
+			role='presentation'
 			loading={loading}
 			src={`https://images.thesupremekingscastle.com/products/${variant}/${productID}.png`}
 			onError={onErrorCB}
 			width='100%'
 			height='auto'
-			alt={productID}
+			alt={`Product - ${productID}`}
 		/>
 	)
 }

@@ -20,8 +20,13 @@
 
 .ban-list-status-change-text-1 {
 	margin-bottom: 0rem;
+	color: rgb(85, 85, 85);
 }
 
 .ban-list-status-change-text-2 {
 	color: black;
+}
+
+.ygo-card-info-parent a {
+	text-decoration: none;
 }
