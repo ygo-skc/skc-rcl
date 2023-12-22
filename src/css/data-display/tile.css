@@ -11,15 +11,15 @@
 }
 
 .small {
-	max-width: 8rem;
-}
-
-.medium {
 	max-width: 10rem;
 }
 
+.medium {
+	max-width: 12rem;
+}
+
 .large {
-	max-width: 14rem;
+	max-width: 16rem;
 }
 
 .full-width {
