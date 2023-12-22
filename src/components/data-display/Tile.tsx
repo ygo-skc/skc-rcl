@@ -17,7 +17,7 @@ const Tile: FC<TileProps> = ({ total, subject, color, action, variant }) => {
 			<Typography data-testid='tile-component-prominent-text' className='tile-prominent-text' variant='h1' align='center'>
 				{total.toLocaleString('en')}
 			</Typography>
-			<Typography data-testid='tile-component-sub-text' variant='h5' align='center' style={{ color: color }}>
+			<Typography data-testid='tile-component-sub-text' className='tile-secondary-text' variant='h5' align='center' style={{ color: color }}>
 				{subject}
 			</Typography>
 		</button>
