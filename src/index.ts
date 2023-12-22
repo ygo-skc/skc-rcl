@@ -1,11 +1,11 @@
-import DateComponent from './components/data-display/DateComponent.js'
+import DateBadge from './components/data-display/DateBadge.js'
 import InlineDate from './components/data-display/InlineDate.js'
 import GenericNonBreakingErr from './components/data-display/GenericNonBreakingErr.js'
 import Tile from './components/data-display/Tile.js'
 import Hint from './components/data-display/Hint.js'
 import Section from './components/data-display/Section.js'
 import SKCTable from './components/data-display/SKCTable.js'
-export { DateComponent, GenericNonBreakingErr, Tile, Hint, Section, SKCTable, InlineDate }
+export { DateBadge, GenericNonBreakingErr, Tile, Hint, Section, SKCTable, InlineDate }
 
 import Pie from './components/data-display/charts/Pie.js'
 export { Pie }

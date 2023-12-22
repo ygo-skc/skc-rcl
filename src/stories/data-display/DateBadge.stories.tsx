@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import DateComponent from '../../components/data-display/DateComponent'
+import DateBadge from '../../components/data-display/DateBadge'
 
-const meta: Meta<typeof DateComponent> = {
-	title: 'Generic/Date Component',
-	component: DateComponent,
+const meta: Meta<typeof DateBadge> = {
+	title: 'Generic/Date Badge',
+	component: DateBadge,
 	args: {
 		month: 'Jan',
 		day: 25,
@@ -12,7 +12,7 @@ const meta: Meta<typeof DateComponent> = {
 }
 export default meta
 
-type Story = StoryObj<typeof DateComponent>
+type Story = StoryObj<typeof DateBadge>
 
 export const Default: Story = {}
 
