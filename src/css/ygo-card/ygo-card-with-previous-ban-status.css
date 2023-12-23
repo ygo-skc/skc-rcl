@@ -1,4 +1,4 @@
-.ygo-card-info-parent {
+.ygo-card-previous-status-parent {
 	width: 18rem;
 	min-width: 18rem;
 	margin-right: 0.75rem;
@@ -27,6 +27,6 @@
 	color: black;
 }
 
-a {
+.ygo-card-previous-status-anchor {
 	text-decoration: none;
 }
