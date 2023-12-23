@@ -12,8 +12,8 @@ export type YGOCardWithPreviousBanStatusProps = {
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
 	return (
-		<div className='ygo-card-info-parent'>
-			<a href={`/card/${card.cardID}`}>
+		<a href={`/card/${card.cardID}`}>
+			<div className='ygo-card-info-parent'>
 				<div className='img-and-previous-status-parent'>
 					<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
 					<div className='ban-list-status-change-text-parent'>
@@ -37,8 +37,8 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 					monsterAssociation={card.monsterAssociation}
 					fullDetails={false}
 				/>
-			</a>
-		</div>
+			</div>
+		</a>
 	)
 }
 
