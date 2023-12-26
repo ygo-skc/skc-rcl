@@ -23,4 +23,11 @@ export default meta
 
 type Story = StoryObj<typeof DatedListItem>
 
-export const Default: Story = {}
+export const BadgeVariant: Story = {}
+
+export const InlineVariant: Story = {
+	args: {
+		variant: 'inline',
+		children: <p>The Best Day Ever</p>,
+	},
+}
