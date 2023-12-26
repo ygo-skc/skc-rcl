@@ -1,27 +1,35 @@
-import React, { FC, startTransition, useCallback, useState } from 'react'
+import React, { FC, SyntheticEvent, useCallback } from 'react'
 import '../../css/photo/rounded-img.css'
-import VizSensor from 'react-visibility-sensor'
 
 export type CardImageRoundedProps = {
-	cardImg: string
-	defaultVisibility?: boolean
+	cardID: string
+	variant: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
+	loading?: 'lazy' | 'eager'
 }
 
-const CardImageRounded: FC<CardImageRoundedProps> = ({ cardImg, defaultVisibility = false }) => {
-	const [visible, setVisible] = useState(defaultVisibility)
-
-	const handleVisibility = useCallback((isVisible: boolean) => {
-		startTransition(() => {
-			if (isVisible !== false) setVisible(isVisible)
-		})
-	}, [])
+const CardImageRounded: FC<CardImageRoundedProps> = ({ cardID, variant, loading = 'eager' }) => {
+	const onErrorCB = useCallback(
+		(e: SyntheticEvent<HTMLImageElement, Event>) => {
+			e.currentTarget.src = `https://images.thesupremekingscastle.com/cards/${variant}/default-card-image.jpg`
+		},
+		[cardID, variant]
+	)
 
 	return (
-		<VizSensor partialVisibility offset={{ bottom: -350, top: -200 }} onChange={handleVisibility}>
-			<div id='rounded-img-outer-container'>
-				<div id='rounded-img-inner-container'>{visible ? <img src={cardImg} id='rounded-img' width='100%' height='100%' alt={`Card`} /> : undefined}</div>
+		<div id='rounded-img-outer-container'>
+			<div id='rounded-img-inner-container'>
+				<img
+					loading={loading}
+					role='presentation'
+					src={`https://images.thesupremekingscastle.com/cards/${variant}/${cardID}.jpg`}
+					onError={onErrorCB}
+					id='rounded-img'
+					width='100%'
+					height='100%'
+					alt={`Card - ${cardID}`}
+				/>
 			</div>
-		</VizSensor>
+		</div>
 	)
 }
 

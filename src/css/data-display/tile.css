@@ -1,39 +1,41 @@
-.glance {
-	padding-left: 1rem;
-	padding-right: 1rem;
+.tile {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	border-radius: 1.5rem;
 	flex: 1;
 	background: #f3f3f3;
+	border: none;
+	display: inline-block;
 }
 
 .small {
-	max-width: 8rem;
-}
-
-.medium {
 	max-width: 10rem;
 }
 
+.medium {
+	max-width: 12rem;
+}
+
 .large {
-	max-width: 14rem;
+	max-width: 16rem;
 }
 
 .full-width {
 	width: 100%;
 }
 
-.glance:hover {
+.tile:hover {
 	cursor: pointer;
 	transform: scale(1.04);
 }
 
-.glance-prominent-text {
+.tile-prominent-text {
 	margin-bottom: 0.2rem;
 	color: #444;
 }
 
-.glance-secondary-text {
+.tile-secondary-text {
 	margin-bottom: 0rem;
 }

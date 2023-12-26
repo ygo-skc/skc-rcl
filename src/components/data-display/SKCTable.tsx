@@ -6,7 +6,7 @@ import '../../css/data-display/table.css'
 export type SKCTableProps = {
 	header: string[]
 	rows: string[][]
-	rowActions?: { (): void }[]
+	rowActions?: (() => void)[]
 	fullWidth?: boolean
 }
 

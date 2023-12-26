@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import CardImageRounded from '../../components/photo/CardImageRounded'
+import ProductImage from '../../components/photo/ProductImage'
 import React from 'react'
 
-const meta: Meta<typeof CardImageRounded> = {
-	title: 'Photo/Card Image Rounded',
-	component: CardImageRounded,
+const meta: Meta<typeof ProductImage> = {
+	title: 'Photo/Product Image',
+	component: ProductImage,
 	decorators: [
 		(Story) => (
 			<div style={{ width: '300px' }}>
@@ -13,12 +13,13 @@ const meta: Meta<typeof CardImageRounded> = {
 		),
 	],
 	args: {
-		cardID: '13256226',
+		productID: 'RA01',
 		variant: 'md',
+		loading: 'lazy',
 	},
 }
 export default meta
 
-type Story = StoryObj<typeof CardImageRounded>
+type Story = StoryObj<typeof ProductImage>
 
 export const Default: Story = {}

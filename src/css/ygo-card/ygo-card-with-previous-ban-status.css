@@ -1,4 +1,4 @@
-.ygo-card-info-parent {
+.ygo-card-previous-status-parent {
 	width: 18rem;
 	min-width: 18rem;
 	margin-right: 0.75rem;
@@ -20,8 +20,13 @@
 
 .ban-list-status-change-text-1 {
 	margin-bottom: 0rem;
+	color: rgb(85, 85, 85);
 }
 
 .ban-list-status-change-text-2 {
 	color: black;
+}
+
+.ygo-card-previous-status-anchor {
+	text-decoration: none;
 }

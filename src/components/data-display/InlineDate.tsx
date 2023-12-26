@@ -11,16 +11,16 @@ export type DateProps = {
 
 const InlineDate: FC<DateProps> = ({ month, day, year }) => {
 	return (
-		<div className='inline-date'>
-			<Typography data-testid='date-component-month-text' variant='subtitle1' className='text month-text'>
+		<div data-testid='inline-date-parent' className='inline-date'>
+			<Typography data-testid='inline-date-month-text' variant='subtitle1' className='text month-text'>
 				{month}
 			</Typography>
 
-			<Typography data-testid='date-component-day-text' variant='subtitle1' className='text day-text'>
+			<Typography data-testid='inline-date-day-text' variant='subtitle1' className='text day-text'>
 				{day}
 			</Typography>
 
-			<Typography data-testid='date-component-year-text' variant='subtitle1' className='text year-text'>
+			<Typography data-testid='inline-date-year-text' variant='subtitle1' className='text year-text'>
 				{year}
 			</Typography>
 		</div>
