@@ -15,8 +15,10 @@ export type DatedListItemProps = {
 }
 
 const DatedListItem: FC<DatedListItemProps> = ({ link, month, day, year, variant = 'badge', children, className }) => {
+	const classes = link === '' ? `list-item-parent disabled ${className}` : `list-item-parent ${className}`
+
 	return (
-		<a href={link} className={`list-item-parent ${className}`}>
+		<a href={link} className={classes}>
 			{variant === 'badge' ? <DateBadge month={month} day={day} year={year} variant='condensed' /> : <InlineDate month={month} day={day} year={year} />}
 			<div className='list-item-text'>{children}</div>
 		</a>

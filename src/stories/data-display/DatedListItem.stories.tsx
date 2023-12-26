@@ -6,7 +6,7 @@ const meta: Meta<typeof DatedListItem> = {
 	title: 'Lists/Dated List Item',
 	component: DatedListItem,
 	args: {
-		link: '',
+		link: '#',
 		month: 'Aug',
 		day: 25,
 		year: 1993,
@@ -27,6 +27,7 @@ export const BadgeVariant: Story = {}
 
 export const InlineVariant: Story = {
 	args: {
+		link: '',
 		variant: 'inline',
 		children: <p>The Best Day Ever</p>,
 	},

@@ -26,6 +26,10 @@ you can also surround component with a div */
 	cursor: pointer;
 }
 
+.disabled {
+	pointer-events: none;
+}
+
 .list-item-text {
 	flex: 1;
 	margin-top: auto;
