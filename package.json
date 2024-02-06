@@ -54,7 +54,7 @@
 		"@testing-library/jest-dom": "6.4.2",
 		"@testing-library/react": "14.2.1",
 		"@types/jest": "29.5.12",
-		"@types/react": "18.2.54",
+		"@types/react": "18.2.55",
 		"@types/rollup-plugin-peer-deps-external": "2.2.4",
 		"@typescript-eslint/eslint-plugin": "6.21.0",
 		"@typescript-eslint/parser": "6.21.0",
