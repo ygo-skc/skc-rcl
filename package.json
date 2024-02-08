@@ -40,7 +40,7 @@
 		"@babel/preset-react": "7.23.3",
 		"@babel/preset-typescript": "7.23.3",
 		"@emotion/styled": "11.11.0",
-		"@mui/material": "5.15.7",
+		"@mui/material": "5.15.9",
 		"@nivo/pie": "0.84.0",
 		"@rollup/plugin-babel": "6.0.4",
 		"@rollup/plugin-image": "3.0.3",
