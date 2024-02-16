@@ -9,6 +9,10 @@
 	border: 2px solid #888;
 }
 
+.ygo-card-previous-status-anchor {
+	text-decoration: none;
+}
+
 .img-and-previous-status-parent {
 	display: flex;
 }
@@ -25,8 +29,4 @@
 
 .ban-list-status-change-text-2 {
 	color: black;
-}
-
-.ygo-card-previous-status-anchor {
-	text-decoration: none;
 }
