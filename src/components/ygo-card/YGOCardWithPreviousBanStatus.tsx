@@ -4,6 +4,7 @@ import CardImageRounded from '../photo/CardImageRounded'
 import YGOCardData from './YGOCardData'
 
 import '../../css/ygo-card/ygo-card-with-previous-ban-status.css'
+import '../../css/index.css'
 
 export type YGOCardWithPreviousBanStatusProps = {
 	card: SKCCard
@@ -12,7 +13,7 @@ export type YGOCardWithPreviousBanStatusProps = {
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
 	return (
-		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-anchor'>
+		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-anchor aggregate-anchor'>
 			<div className='ygo-card-previous-status-parent'>
 				<div className='img-and-previous-status-parent'>
 					<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
