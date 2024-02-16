@@ -9,11 +9,6 @@
 	border: 2px solid #888;
 }
 
-.ygo-card-previous-status-anchor {
-	text-decoration: none;
-	border-radius: 2.5rem;
-}
-
 .img-and-previous-status-parent {
 	display: flex;
 }

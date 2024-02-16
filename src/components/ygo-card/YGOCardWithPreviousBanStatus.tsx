@@ -12,32 +12,30 @@ export type YGOCardWithPreviousBanStatusProps = {
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
 	return (
-		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-anchor aggregate-anchor'>
-			<div className='ygo-card-previous-status-parent'>
-				<div className='img-and-previous-status-parent'>
-					<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
-					<div className='ban-list-status-change-text-parent'>
-						<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
-							Previously
-						</Typography>
-						<Typography align='right' variant='h6' className='ban-list-status-change-text-2'>
-							{previousBanStatus}
-						</Typography>
-					</div>
+		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-parent aggregate-anchor'>
+			<div className='img-and-previous-status-parent'>
+				<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
+				<div className='ban-list-status-change-text-parent'>
+					<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
+						Previously
+					</Typography>
+					<Typography align='right' variant='h6' className='ban-list-status-change-text-2'>
+						{previousBanStatus}
+					</Typography>
 				</div>
-				<YGOCardData
-					cardID={card.cardID}
-					cardName={card.cardName}
-					cardColor={card.cardColor}
-					cardEffect={card.cardEffect}
-					monsterType={card.monsterType}
-					cardAttribute={card.cardAttribute}
-					monsterAttack={card.monsterAttack}
-					monsterDefense={card.monsterDefense}
-					monsterAssociation={card.monsterAssociation}
-					fullDetails={false}
-				/>
 			</div>
+			<YGOCardData
+				cardID={card.cardID}
+				cardName={card.cardName}
+				cardColor={card.cardColor}
+				cardEffect={card.cardEffect}
+				monsterType={card.monsterType}
+				cardAttribute={card.cardAttribute}
+				monsterAttack={card.monsterAttack}
+				monsterDefense={card.monsterDefense}
+				monsterAssociation={card.monsterAssociation}
+				fullDetails={false}
+			/>
 		</a>
 	)
 }
