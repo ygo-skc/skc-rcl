@@ -4,7 +4,6 @@ import CardImageRounded from '../photo/CardImageRounded'
 import YGOCardData from './YGOCardData'
 
 import '../../css/ygo-card/ygo-card-with-previous-ban-status.css'
-import '../../css/index.css'
 
 export type YGOCardWithPreviousBanStatusProps = {
 	card: SKCCard
