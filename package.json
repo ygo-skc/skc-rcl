@@ -33,10 +33,10 @@
 		"react-element-to-jsx-string": "15.0.0",
 		"@mdx-js/react": "3.0.1",
 		"d3-color": "3.1.0",
-		"@babel/traverse": "7.23.9"
+		"@babel/traverse": "7.24.0"
 	},
 	"devDependencies": {
-		"@babel/preset-env": "7.23.9",
+		"@babel/preset-env": "7.24.0",
 		"@babel/preset-react": "7.23.3",
 		"@babel/preset-typescript": "7.23.3",
 		"@emotion/styled": "11.11.0",
