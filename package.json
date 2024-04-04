@@ -72,7 +72,7 @@
     "rollup-plugin-postcss": "4.0.2",
     "storybook": "8.0.5",
     "ts-jest": "29.1.2",
-    "typescript": "5.4.3"
+    "typescript": "5.4.4"
   },
   "peerDependencies": {
     "@emotion/styled": ">=11.11.0",
