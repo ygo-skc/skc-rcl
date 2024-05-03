@@ -52,7 +52,7 @@
 		"@storybook/addon-links": "8.0.9",
 		"@storybook/addon-webpack5-compiler-babel": "3.0.3",
 		"@storybook/react-webpack5": "8.0.9",
-		"@testing-library/jest-dom": "6.4.3",
+		"@testing-library/jest-dom": "6.4.4",
 		"@testing-library/react": "15.0.6",
 		"@types/jest": "29.5.12",
 		"@types/react": "18.3.1",
