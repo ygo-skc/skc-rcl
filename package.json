@@ -1,23 +1,21 @@
 {
 	"name": "skc-rcl",
-	"version": "1.1.5",
+	"version": "1.1.6-0",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
 	"homepage": "http://ygo-skc.github.io/skc-rcl",
 	"scripts": {
-		"preinstall": "npx force-resolutions",
-		"postinstall": "npm dedupe",
-		"fresh-install": "rm -rf node_modules package-lock.json && npm install",
+		"fresh-install": "rm -rf node_modules yarn.lock && yarn install --ignore-optional",
 		"start": "storybook dev -p 6006",
 		"build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
 		"test": "jest",
 		"test:i": "jest --watch",
 		"build-storybook": "storybook build",
 		"lint": "eslint src --ext .tsx",
-		"deploy-storybook": "npm run build-storybook && gh-pages -d storybook-static",
+		"deploy-storybook": "yarn run build-storybook && gh-pages -d storybook-static",
 		"gh:deploy-storybook": "git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/ygo-skc/skc-rcl.git && gh-pages -d storybook-static -u \"github-actions-bot <support+actions@github.com>\"",
-		"ci:publish": "npm run build && npm publish"
+		"ci:publish": "yarn run build && yarn publish"
 	},
 	"keywords": [
 		"skc",
@@ -33,12 +31,15 @@
 		"react-element-to-jsx-string": "15.0.0",
 		"@mdx-js/react": "3.0.1",
 		"d3-color": "3.1.0",
-		"@babel/traverse": "7.24.5"
+		"@babel/traverse": "7.24.5",
+		"@babel/core": "7.24.5",
+		"postcss": "8.4.38"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.24.5",
 		"@babel/preset-react": "7.24.1",
 		"@babel/preset-typescript": "7.24.1",
+		"@emotion/react": "11.11.4",
 		"@emotion/styled": "11.11.5",
 		"@mui/material": "5.15.17",
 		"@nivo/pie": "0.86.0",
