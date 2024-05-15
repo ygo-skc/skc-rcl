@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4.1.4
+      - uses: actions/checkout@v4.1.5
 
       - name: Setup Node
         uses: actions/setup-node@v4.0.2
@@ -18,12 +18,12 @@ jobs:
           node-version: '20.x'
 
       - name: Instal Dependencies
-        run: npm ci
+        run: yarn install
 
       - name: Build StoryBook
-        run: npm run build-storybook
+        run: yarn run build-storybook
 
       - name: Deploy StoryBook
-        run: npm run gh:deploy-storybook
+        run: yarn run gh:deploy-storybook
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
