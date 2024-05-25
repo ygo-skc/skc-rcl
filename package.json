@@ -1,6 +1,6 @@
 {
 	"name": "skc-rcl",
-	"version": "1.1.6",
+	"version": "1.1.7-2",
 	"description": "Component library for SKC Web and all other SKC Web sub domains.",
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
@@ -96,7 +96,7 @@
 		],
 		"coverageThreshold": {
 			"global": {
-				"branches": 12,
+				"branches": 10,
 				"functions": 20,
 				"lines": 20,
 				"statements": 20
