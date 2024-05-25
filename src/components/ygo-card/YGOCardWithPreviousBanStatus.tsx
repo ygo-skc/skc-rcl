@@ -14,7 +14,7 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 	return (
 		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-parent aggregate-anchor'>
 			<div className='img-and-previous-status-parent'>
-				<CardImageRounded cardID={card.cardID} variant='tn' loading='lazy' />
+				<CardImageRounded cardID={card.cardID} size='tn' loading='lazy' />
 				<div className='ban-list-status-change-text-parent'>
 					<Typography align='right' variant='h5' className='ban-list-status-change-text-1'>
 						Previously

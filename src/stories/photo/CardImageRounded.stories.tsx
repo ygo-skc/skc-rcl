@@ -14,7 +14,7 @@ const meta: Meta<typeof CardImageRounded> = {
 	],
 	args: {
 		cardID: '13256226',
-		variant: 'md',
+		size: 'md',
 	},
 }
 export default meta
