@@ -22,3 +22,11 @@ export default meta
 type Story = StoryObj<typeof CardImageRounded>
 
 export const Default: Story = {}
+
+export const Circle: Story = {
+	args: {
+		cardID: '13256226',
+		size: 'md',
+		variant: 'circle'
+	},
+}
