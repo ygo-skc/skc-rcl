@@ -12,7 +12,7 @@
 	padding-bottom: 100%;
 }
 
-.rounded-img-inner-container .circle {
+.rounded-img-inner-container.circle {
 	border-radius: 50%;
 }
 
