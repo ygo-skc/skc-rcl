@@ -1,14 +1,13 @@
-.quantity-chip {
-	background: rgba(107, 52, 91, 0.8);
-	margin: 0;
-	float: right;
-}
-
 .quantity-text-container {
 	min-width: 55%;
 	margin: auto;
 }
 
-.header {
+.ygo-card-with-quantity-header {
 	display: flex;
+	width: 100%;
+}
+
+.ygo-card-with-quantity-header > *:not(:last-child) {
+	margin-right: .75rem;
 }
