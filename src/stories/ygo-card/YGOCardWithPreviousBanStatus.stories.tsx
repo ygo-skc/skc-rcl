@@ -7,7 +7,7 @@ const meta: Meta<typeof YGOCardWithPreviousBanStatus> = {
 	component: YGOCardWithPreviousBanStatus,
 	decorators: [
 		(Story) => (
-			<div style={{ width: '300px' }}>
+			<div style={{ display: 'flex' }}>
 				<Story />
 			</div>
 		),
