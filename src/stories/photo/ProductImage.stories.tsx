@@ -14,7 +14,7 @@ const meta: Meta<typeof ProductImage> = {
 	],
 	args: {
 		productID: 'RA01',
-		variant: 'md',
+		size: 'md',
 		loading: 'lazy',
 	},
 }

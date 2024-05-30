@@ -3,27 +3,30 @@ import '../../css/photo/rounded-img.css'
 
 export type CardImageRoundedProps = {
 	cardID: string
-	variant: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
+	size: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
+	variant?: 'circle' | 'rounded-rect'
 	loading?: 'lazy' | 'eager'
 }
 
-const CardImageRounded: FC<CardImageRoundedProps> = ({ cardID, variant, loading = 'eager' }) => {
+const CardImageRounded: FC<CardImageRoundedProps> = ({ cardID, size, variant= 'rounded-rect', loading = 'eager' }) => {
 	const onErrorCB = useCallback(
 		(e: SyntheticEvent<HTMLImageElement, Event>) => {
-			e.currentTarget.src = `https://images.thesupremekingscastle.com/cards/${variant}/default-card-image.jpg`
+			e.currentTarget.src = `https://images.thesupremekingscastle.com/cards/${size}/default-card-image.jpg`
 		},
-		[cardID, variant]
+		[cardID, size]
 	)
 
+	const className = variant === 'rounded-rect'? 'rounded-img-inner-container' : 'rounded-img-inner-container circle'
+
 	return (
-		<div id='rounded-img-outer-container'>
-			<div id='rounded-img-inner-container'>
+		<div className='rounded-img-outer-container'>
+			<div className={className}>
 				<img
+					className='rounded-img'
 					loading={loading}
 					role='presentation'
-					src={`https://images.thesupremekingscastle.com/cards/${variant}/${cardID}.jpg`}
+					src={`https://images.thesupremekingscastle.com/cards/${size}/${cardID}.jpg`}
 					onError={onErrorCB}
-					id='rounded-img'
 					width='100%'
 					height='100%'
 					alt={`Card - ${cardID}`}

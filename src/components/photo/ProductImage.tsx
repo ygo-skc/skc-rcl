@@ -2,17 +2,17 @@ import React, { FC, SyntheticEvent, useCallback } from 'react'
 
 export type ProductImageProps = {
 	productID: string
-	variant: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
+	size: 'original' | 'lg' | 'md' | 'sm' | 'x-sm' | 'tn'
 	loading?: 'lazy' | 'eager'
 	className?: string
 }
 
-const ProductImage: FC<ProductImageProps> = ({ productID, variant, className, loading = 'eager' }) => {
+const ProductImage: FC<ProductImageProps> = ({ productID, size, className, loading = 'eager' }) => {
 	const onErrorCB = useCallback(
 		(e: SyntheticEvent<HTMLImageElement, Event>) => {
-			e.currentTarget.src = `https://images.thesupremekingscastle.com/products/${variant}/default-product-image.png`
+			e.currentTarget.src = `https://images.thesupremekingscastle.com/products/${size}/default-product-image.png`
 		},
-		[productID, variant]
+		[productID, size]
 	)
 
 	return (
@@ -20,7 +20,7 @@ const ProductImage: FC<ProductImageProps> = ({ productID, variant, className, lo
 			className={className}
 			role='presentation'
 			loading={loading}
-			src={`https://images.thesupremekingscastle.com/products/${variant}/${productID}.png`}
+			src={`https://images.thesupremekingscastle.com/products/${size}/${productID}.png`}
 			onError={onErrorCB}
 			width='100%'
 			height='auto'

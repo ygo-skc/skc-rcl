@@ -1,11 +1,11 @@
 .ygo-card-previous-status-parent {
-	width: 18rem;
-	min-width: 18rem;
+	width: 17rem;
+	min-width: 17rem;
 	margin-right: 0.75rem;
 	cursor: pointer;
 	background-color: #eee;
-	padding: 1rem;
-	border-radius: 2.5rem;
+	padding: 0.75rem;
+	border-radius: 1.25rem;
 	border: 2px solid #888;
 }
 

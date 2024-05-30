@@ -10,7 +10,7 @@ export type YGOCardProps = {
 const YGOCard: FC<YGOCardProps> = ({ card, imgLoadingType }) => {
 	return (
 		<Fragment>
-			<CardImageRounded cardID={card.cardID} variant='x-sm' loading={imgLoadingType} />
+			<CardImageRounded cardID={card.cardID} size='x-sm' loading={imgLoadingType} />
 
 			<YGOCardData
 				cardName={card.cardName}
