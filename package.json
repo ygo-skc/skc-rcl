@@ -54,7 +54,7 @@
 		"@storybook/addon-links": "8.1.6",
 		"@storybook/addon-webpack5-compiler-babel": "3.0.3",
 		"@storybook/react-webpack5": "8.1.6",
-		"@testing-library/jest-dom": "6.4.5",
+		"@testing-library/jest-dom": "6.4.6",
 		"@testing-library/react": "16.0.0",
 		"@types/jest": "29.5.12",
 		"@types/react": "18.3.3",
