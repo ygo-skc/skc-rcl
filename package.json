@@ -73,7 +73,7 @@
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-postcss": "4.0.2",
 		"storybook": "8.1.9",
-		"ts-jest": "29.1.4",
+		"ts-jest": "29.1.5",
 		"typescript": "5.4.5"
 	},
 	"peerDependencies": {
