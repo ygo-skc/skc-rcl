@@ -33,7 +33,7 @@
 		"d3-color": "3.1.0",
 		"@babel/traverse": "7.24.7",
 		"@babel/core": "7.24.7",
-		"postcss": "8.4.38",
+		"postcss": "8.4.39",
 		"react-dom": "18.3.1"
 	},
 	"devDependencies": {
