@@ -52,7 +52,7 @@
 		"@nivo/pie": "0.87.0",
 		"@rollup/plugin-babel": "6.0.4",
 		"@rollup/plugin-image": "3.0.3",
-		"@rollup/plugin-node-resolve": "15.2.3",
+		"@rollup/plugin-node-resolve": "15.2.4",
 		"@rollup/plugin-terser": "0.4.4",
 		"@rollup/plugin-typescript": "11.1.6",
 		"@storybook/addon-essentials": "8.3.2",
