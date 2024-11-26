@@ -41,7 +41,8 @@
 		"send": "0.19.1",
 		"serve-static": "1.16.2",
 		"express": "4.21.1",
-		"cross-spawn": "7.0.6"
+		"cross-spawn": "7.0.6",
+		"rollup": "4.27.4"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.26.0",
