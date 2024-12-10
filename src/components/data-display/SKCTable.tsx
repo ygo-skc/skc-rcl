@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback } from 'react'
+import React, { FC, JSX, memo, useCallback } from 'react'
 import { TableContainer, Box, TableHead, TableBody, Table, TableCell, TableRow } from '@mui/material'
 
 import '../../css/data-display/table.css'
