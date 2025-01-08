@@ -3570,7 +3570,7 @@ create-jest@^29.7.0:
     jest-util "^29.7.0"
     prompts "^2.0.1"
 
-cross-spawn@7.0.3, cross-spawn@7.0.6, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-spawn@7.0.6, cross-spawn@^7.0.2, cross-spawn@^7.0.3, cross-spawn@^7.0.6:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.6.tgz#8a58fe78f00dcd70c370451759dfbfaf03e8ee9f"
   integrity sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==
@@ -6036,13 +6036,13 @@ jest-snapshot@^29.7.0:
     pretty-format "^29.7.0"
     semver "^7.5.3"
 
-jest-transform-css@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/jest-transform-css/-/jest-transform-css-6.0.1.tgz#95c579c98945734439c1f243b9843d5f477a9c60"
-  integrity sha512-i78Pi2MW6vcdsUFSRx1kPbjbEIO0pBWwh1Y+PcDrLwTv/6e5p7fzsV/gxFW/SYMHS8DUvMdRVTwVCkA/y+t0iQ==
+jest-transform-css@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/jest-transform-css/-/jest-transform-css-6.0.2.tgz#53fe5728113a75499d83b8624a5968e7ff84628c"
+  integrity sha512-lT+8PzgsRivRT1SWHvkJPeYhDk7nffyZZOgpp+mPAt+25djBp1ensSOeyaO7QWucVqPzBFyDU++syRDOf52H0w==
   dependencies:
     common-tags "1.8.2"
-    cross-spawn "7.0.3"
+    cross-spawn "^7.0.6"
     postcss-load-config "4.0.1"
     postcss-modules "4.3.1"
     style-inject "0.3.0"
