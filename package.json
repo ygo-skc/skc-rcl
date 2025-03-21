@@ -77,7 +77,7 @@
 		"jest-transform-css": "6.0.2",
 		"react": "19.0.0",
 		"rollup": "4.36.0",
-		"rollup-plugin-dts": "6.2.0",
+		"rollup-plugin-dts": "6.2.1",
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-postcss": "4.0.2",
 		"storybook": "8.6.7",
