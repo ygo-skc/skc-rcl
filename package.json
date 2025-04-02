@@ -42,7 +42,7 @@
 		"serve-static": "1.16.2",
 		"express": "4.21.2",
 		"cross-spawn": "7.0.6",
-		"rollup": "4.38.0"
+		"rollup": "4.39.0"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.26.9",
@@ -76,7 +76,7 @@
 		"jest-environment-jsdom": "29.7.0",
 		"jest-transform-css": "6.0.2",
 		"react": "19.1.0",
-		"rollup": "4.38.0",
+		"rollup": "4.39.0",
 		"rollup-plugin-dts": "6.2.1",
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-postcss": "4.0.2",
