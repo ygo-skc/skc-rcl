@@ -51,7 +51,7 @@
 		"@emotion/react": "11.14.0",
 		"@emotion/styled": "11.14.0",
 		"@mui/material": "7.0.2",
-		"@nivo/pie": "0.92.2",
+		"@nivo/pie": "0.93.0",
 		"@rollup/plugin-babel": "6.0.4",
 		"@rollup/plugin-image": "3.0.3",
 		"@rollup/plugin-node-resolve": "16.0.1",
