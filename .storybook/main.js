@@ -1,14 +1,13 @@
 module.exports = {
-	stories: ["../src/**/*.stories.@(ts|tsx)"],
-	addons: ['@storybook/addon-essentials', "@storybook/addon-webpack5-compiler-babel"],
+	stories: ['../src/**/*.stories.@(ts|tsx)'],
+	addons: ['@storybook/addon-webpack5-compiler-babel', '@storybook/addon-docs'],
+
 	framework: {
 		name: '@storybook/react-webpack5',
 		options: {},
 	},
+
 	typescript: {
 		reactDocgen: false,
-	},
-	docs: {
-		autodocs: true,
 	},
 }
