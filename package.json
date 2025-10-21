@@ -27,7 +27,7 @@
 		"trim-newlines": "5.0.0",
 		"glob-parent": "6.0.2",
 		"trim": "1.0.1",
-		"react-inspector": "6.0.2",
+		"react-inspector": "9.0.0",
 		"react-element-to-jsx-string": "17.0.1",
 		"@mdx-js/react": "3.1.1",
 		"d3-color": "3.1.0",
