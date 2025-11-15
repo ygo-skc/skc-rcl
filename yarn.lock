@@ -2538,12 +2538,10 @@
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.6.tgz#e6e60dad29c2c8c206c026e6dd8d6d1bdda850b8"
   integrity sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==
 
-"@types/rollup-plugin-peer-deps-external@2.2.5":
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/@types/rollup-plugin-peer-deps-external/-/rollup-plugin-peer-deps-external-2.2.5.tgz#8df65fb70c26b0054117ce54dbd01d3a2dfa2e1d"
-  integrity sha512-BvxHEsbzspw1BDyktFdjx5AQ5OHZGFJuDUAj+dDzDT0pfnz9/vr8sxxQwGINsptaltxbTVBTAxlZujM62F79XA==
-  dependencies:
-    rollup "^0.63.4"
+"@types/rollup-plugin-peer-deps-external@2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@types/rollup-plugin-peer-deps-external/-/rollup-plugin-peer-deps-external-2.2.6.tgz#5c337176c62d0fb0e66dca8fdb88bc0778cc50c9"
+  integrity sha512-rR0p2+VZ5+RTyTA+MemzE7RQs3vkGNsYsEZIl+RahwrJOtEDEg+a5RCnigSwPkBtu4H7dyVHXyUZfiZU2dwjdw==
 
 "@types/semver@^7.3.4":
   version "7.7.1"
@@ -7311,7 +7309,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@4.53.2, rollup@^0.63.4:
+rollup@4.53.2:
   version "4.53.2"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.53.2.tgz#98e73ee51e119cb9d88b07d026c959522416420a"
   integrity sha512-MHngMYwGJVi6Fmnk6ISmnk7JAHRNF0UkuucA0CUW3N3a4KnONPEZz+vUanQP/ZC/iY1Qkf3bwPWzyY84wEks1g==
