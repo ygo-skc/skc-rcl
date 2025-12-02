@@ -40,7 +40,7 @@
 		"path-to-regexp": "8.3.0",
 		"send": "1.2.0",
 		"serve-static": "2.2.0",
-		"express": "5.2.0",
+		"express": "5.2.1",
 		"cross-spawn": "7.0.6",
 		"rollup": "4.53.3"
 	},
