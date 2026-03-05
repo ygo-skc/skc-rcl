@@ -46,7 +46,7 @@
 		"js-yaml": "4.1.1",
 		"minimatch": "9.0.7",
 		"serialize-javascript": "7.0.4",
-		"svgo": "2.8.1"
+		"svgo": "4.0.1"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "7.29.0",
