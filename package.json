@@ -62,7 +62,7 @@
 		"@rollup/plugin-typescript": "12.3.0",
 		"@storybook/addon-docs": "10.3.3",
 		"@storybook/addon-links": "10.3.3",
-		"@storybook/addon-webpack5-compiler-babel": "4.0.0",
+		"@storybook/addon-webpack5-compiler-babel": "4.0.1",
 		"@storybook/react-webpack5": "10.3.3",
 		"@testing-library/dom": "10.4.1",
 		"@testing-library/jest-dom": "6.9.1",
