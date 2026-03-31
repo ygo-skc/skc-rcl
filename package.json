@@ -37,7 +37,7 @@
 		"react-dom": "19.2.4",
 		"ws": "8.20.0",
 		"body-parser": "2.2.2",
-		"path-to-regexp": "8.4.0",
+		"path-to-regexp": "8.4.1",
 		"send": "1.2.1",
 		"serve-static": "2.2.1",
 		"express": "5.2.1",
