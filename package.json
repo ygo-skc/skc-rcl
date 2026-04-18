@@ -42,7 +42,7 @@
 		"serve-static": "2.2.1",
 		"express": "5.2.1",
 		"cross-spawn": "7.0.6",
-		"rollup": "4.60.1",
+		"rollup": "4.60.2",
 		"js-yaml": "4.1.1",
 		"serialize-javascript": "7.0.5",
 		"svgo": "4.0.1"
@@ -79,7 +79,7 @@
 		"jest-environment-jsdom": "30.3.0",
 		"jest-transform-css": "6.0.3",
 		"react": "19.2.5",
-		"rollup": "4.60.1",
+		"rollup": "4.60.2",
 		"rollup-plugin-dts": "6.4.1",
 		"rollup-plugin-peer-deps-external": "2.2.4",
 		"rollup-plugin-postcss": "4.0.2",
