@@ -1,3 +1,5 @@
+declare module '*.css' {}
+
 declare module '*.svg'
 
 declare type cardColor =
