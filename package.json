@@ -48,7 +48,7 @@
 		"svgo": "4.0.1"
 	},
 	"devDependencies": {
-		"@babel/preset-env": "7.29.2",
+		"@babel/preset-env": "7.29.3",
 		"@babel/preset-react": "7.28.5",
 		"@babel/preset-typescript": "7.28.5",
 		"@emotion/react": "11.14.0",
