@@ -1,35 +1,53 @@
-.table-head {
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
 .table-container {
-	border-top-left-radius: 1.1rem;
-	border-top-right-radius: 1.1rem;
-	border-bottom-left-radius: 0.7rem;
-	border-bottom-right-radius: 0.7rem;
+	--table-bg: #f7f4ff;
+	--table-border: #dad0f2;
+	--table-header-bg: #dbd0fb;
+	--table-header-text: #2f1f62;
+	--table-row-bg: #ffffff;
+	--table-row-alt-bg: #f1ebfb;
+	--table-text: #2d2a3b;
+	--table-divider: rgba(111, 84, 216, 0.16);
+	--table-hover-bg: rgba(251, 146, 60, 0.16);
+	--table-hover-border: #fb923c;
+
 	max-width: 98%;
 	margin: auto;
-
-	background-color: rgba(0, 0, 0, 0.75);
+	border-radius: 1.15rem;
+	background: var(--table-bg);
+	border: 1px solid var(--table-border);
+	overflow: hidden;
 }
 
-.hover:hover,
-.hover:hover:nth-child(even) {
-	cursor: pointer;
-	background: rgba(255, 255, 255, 0.05);
-}
-
-.no-hover {
-	cursor: auto !important;
-}
-
-.MuiTableRow-root:nth-child(even) {
-	background-color: rgba(0, 0, 0, 0.1);
+.table-head {
+	background: var(--table-header-bg);
+	box-shadow: inset 0 -1px 0 rgba(47, 31, 98, 0.1);
 }
 
 .MuiTableCell-root {
-	color: rgba(255, 255, 255, 0.97) !important;
-	padding: 0.7rem !important;
+	color: var(--table-text) !important;
+	padding: 0.75rem 1rem !important;
+	border-bottom: 1px solid var(--table-divider) !important;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+	font-weight: 700;
+	color: var(--table-header-text) !important;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	border-bottom: 2px solid rgba(47, 31, 98, 0.18) !important;
+}
+
+.MuiTableRow-root.hover:hover {
+	background: var(--table-hover-bg);
+	border-left: 0.3rem solid var(--table-hover-border);
+}
+
+.MuiTableRow-root:nth-child(even) {
+	background: var(--table-row-alt-bg);
+}
+
+.MuiTableRow-root:nth-child(odd) {
+	background: var(--table-row-bg);
 }
 
 td {

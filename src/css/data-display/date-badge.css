@@ -1,8 +1,11 @@
 .date-parent {
-	border-radius: 1rem;
-	padding: 0rem;
-	background: #f5f5f5;
-	width: 7rem;
+	width: 7.5rem;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	box-shadow: 0 22px 45px rgba(16, 24, 40, 0.12);
+	backdrop-filter: blur(18px);
 }
 
 .date-parent-condensed {
@@ -10,27 +13,34 @@
 }
 
 .date-parent .month-text {
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
-	background: #e42364;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	background: rgba(228, 35, 100, 0.95);
 	color: white;
-	padding-left: 0.25rem;
-	padding-right: 0.25rem;
-	padding-top: 0.2rem;
-	margin-bottom: 0.05rem;
+	padding: 0.35rem 0.65rem;
+	border-radius: 999px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	margin-bottom: 0.35rem;
 }
 
 .date-parent-condensed .month-text {
-	margin-bottom: 0.2rem;
-	line-height: 1.4;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.75rem;
 }
 
 .date-parent .day-text {
 	font-weight: 800;
-	margin-bottom: 0rem;
-	line-height: 1.2;
+	line-height: 1;
+	color: #111827;
 }
 
 .date-parent .year-text {
-	margin-bottom: 0rem;
+	color: #4b5563;
+	font-size: 0.85rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
 }

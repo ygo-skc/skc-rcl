@@ -1,13 +1,19 @@
 .tile {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 10rem;
+	padding: 1.75rem 1.5rem;
 	border-radius: 1.5rem;
-	flex: 1;
-	background: #f3f3f3;
-	border: none;
-	display: inline-block;
+	background: #ffffff;
+	border: 1px solid rgba(111, 84, 216, 0.18);
+	box-shadow: 0 16px 30px rgba(111, 84, 216, 0.08);
+	transition:
+		transform 180ms ease,
+		box-shadow 180ms ease,
+		background 180ms ease;
+	cursor: pointer;
 }
 
 .small {
@@ -27,15 +33,26 @@
 }
 
 .tile:hover {
-	cursor: pointer;
-	transform: scale(1.04);
+	transform: translateY(-2px);
+	box-shadow: 0 24px 36px rgba(111, 84, 216, 0.12);
+	background: #f8f5ff;
 }
 
 .tile-prominent-text {
-	margin-bottom: 0.2rem;
-	color: #444;
+	margin: 0;
+	color: #2b1f4d;
+	font-size: 3rem;
+	line-height: 1;
+	text-align: center;
 }
 
 .tile-secondary-text {
-	margin-bottom: 0rem;
+	margin: 0.9rem 0 0;
+	color: #4f3fb2;
+	font-size: 1rem;
+	line-height: 1.4;
+	text-align: center;
+	word-break: break-word;
+	white-space: normal;
+	max-width: 100%;
 }
