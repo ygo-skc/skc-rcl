@@ -44,7 +44,7 @@
 		"cross-spawn": "7.0.6",
 		"rollup": "4.62.2",
 		"js-yaml": "4.3.0",
-		"serialize-javascript": "7.0.6",
+		"serialize-javascript": "7.0.7",
 		"svgo": "4.0.1"
 	},
 	"devDependencies": {
