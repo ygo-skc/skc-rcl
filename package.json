@@ -33,7 +33,7 @@
 		"d3-color": "3.1.0",
 		"@babel/traverse": "7.29.7",
 		"@babel/core": "7.29.7",
-		"postcss": "8.5.16",
+		"postcss": "8.5.17",
 		"react-dom": "19.2.7",
 		"ws": "8.21.0",
 		"body-parser": "2.3.0",
