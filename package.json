@@ -77,7 +77,7 @@
 		"eslint": "10.8.0",
 		"eslint-plugin-react": "7.37.5",
 		"gh-pages": "6.3.0",
-		"globals": "17.7.0",
+		"globals": "17.8.0",
 		"jest": "30.4.2",
 		"jest-environment-jsdom": "30.4.1",
 		"jest-transform-css": "6.0.3",
