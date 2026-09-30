@@ -47,7 +47,8 @@
 		"rollup": "4.63.5",
 		"js-yaml": "5.4.2",
 		"serialize-javascript": "7.1.2",
-		"svgo": "4.1.0"
+		"svgo": "4.1.0",
+		"webpack-dev-middleware": "7.4.6"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "8.0.6",
