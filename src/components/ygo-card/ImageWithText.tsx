@@ -12,7 +12,7 @@ const ImageWithText: FC<ImageWithTextProps> = ({ imageComponent, text }) => {
 	return (
 		<div data-testid='image-with-text-component' className='img-with-number-parent'>
 			{imageComponent}
-			<Typography data-testid='image-text' variant='subtitle1' textAlign='center'>
+			<Typography data-testid='image-text' variant='subtitle1' align='center'>
 				{text}
 			</Typography>
 		</div>

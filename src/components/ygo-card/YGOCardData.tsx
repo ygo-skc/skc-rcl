@@ -12,7 +12,6 @@ export type YGOCardDataProps = SKCCard & {
 	className?: string
 }
 
-/* eslint-disable react/display-name */
 const YGOCardData: FC<YGOCardDataProps> = ({
 	cardName,
 	cardColor,

@@ -5,7 +5,6 @@ import postcss from 'rollup-plugin-postcss'
 import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
-import { RollupOptions } from 'rollup'
 import image from '@rollup/plugin-image'
 
 export default [
@@ -45,4 +44,4 @@ export default [
 		external: [/\.css$/, /\.svg$/], // omit non-ts imports
 		plugins: [dts()],
 	},
-] as RollupOptions
+]
