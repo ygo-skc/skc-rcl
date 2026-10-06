@@ -45,7 +45,7 @@
 		"browserslist": "4.29.3",
 		"brace-expansion": "5.0.12",
 		"rollup": "4.64.0",
-		"js-yaml": "5.4.2",
+		"js-yaml": "5.4.3",
 		"serialize-javascript": "7.1.2",
 		"svgo": "4.1.0",
 		"webpack-dev-middleware": "7.4.6"
