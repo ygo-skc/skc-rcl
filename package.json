@@ -48,7 +48,8 @@
 		"js-yaml": "5.4.3",
 		"serialize-javascript": "7.1.2",
 		"svgo": "4.1.0",
-		"webpack-dev-middleware": "8.3.0"
+		"webpack-dev-middleware": "8.3.0",
+		"postcss-selector-parser": "7.1.6"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "8.0.7",
