@@ -16,7 +16,7 @@ describe('Card attribute icon', () => {
 			<>
 				<YGOCardAttribute attribute='Spell' />
 				<YGOCardAttribute attribute='Trap' />
-			</>
+			</>,
 		)
 
 		expect(screen.getByRole('img', { name: 'Spell attribute' })).toHaveAttribute('src', 'spell.svg')
@@ -28,7 +28,7 @@ describe('Card attribute icon', () => {
 			<>
 				<YGOCardAttribute />
 				<YGOCardAttribute attribute='Laugh' />
-			</>
+			</>,
 		)
 
 		expect(container).toBeEmptyDOMElement()
