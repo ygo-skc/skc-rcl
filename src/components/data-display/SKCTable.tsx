@@ -1,4 +1,4 @@
-import React, { FC, JSX, memo, useCallback } from 'react'
+import React, { FC, KeyboardEvent, memo } from 'react'
 import { TableContainer, Box, TableHead, TableBody, Table, TableCell, TableRow } from '@mui/material'
 
 import '../../css/data-display/table.css'
@@ -10,44 +10,56 @@ export type SKCTableProps = {
 	fullWidth?: boolean
 }
 
+// counts, ids made of digits, percentages and signed numbers line up on the right; dates and words stay left
+const isNumeric = (value: string) => /^[-+]?[\d,]*\.?\d+%?$/.test(value.trim())
+
+const runOnEnterOrSpace = (action: () => void) => (event: KeyboardEvent<HTMLTableRowElement>) => {
+	if (event.key === 'Enter' || event.key === ' ') {
+		event.preventDefault()
+		action()
+	}
+}
+
+/*
+ * Compact table for any tabular data. Text sizes come from the consumer's MUI theme (TableCell), colours from
+ * --skc-table-* custom properties. Rows with an action can be clicked or reached with the keyboard
+ */
 const SKCTable: FC<SKCTableProps> = ({ header, rows, rowActions = [], fullWidth = false }) => {
-	const createHeaderRow = useCallback((): JSX.Element => {
-		const columns = header.map((header: string) => {
-			return <TableCell key={header}>{header}</TableCell>
-		})
-
-		return (
-			<TableRow key='header' className='no-hover'>
-				{columns}
-			</TableRow>
-		)
-	}, [header])
-
-	const createRows = useCallback((): JSX.Element[] => {
-		return rows.map((row: string[], index: number) => {
-			const columns: JSX.Element[] = row.map((columnValue: string) => {
-				return <TableCell key={columnValue}>{columnValue}</TableCell>
-			})
-
-			const rowKey = row.toString()
-
-			return rowActions.length === 0 ? (
-				<TableRow className='no-hover' key={rowKey}>
-					{columns}
-				</TableRow>
-			) : (
-				<TableRow className='hover' key={rowKey} onClick={rowActions[index]}>
-					{columns}
-				</TableRow>
-			)
-		})
-	}, [rowActions, rows])
+	// a header lines up with its column when every value under it is numeric
+	const numericColumns = header.map((_, column) => rows.length > 0 && rows.every((row) => isNumeric(row[column] ?? '')))
 
 	return (
-		<TableContainer className={'table-container'} style={fullWidth ? { maxWidth: '100%', margin: '0' } : undefined} component={Box}>
+		<TableContainer className='skc-table' style={fullWidth ? { maxWidth: '100%', margin: '0' } : undefined} component={Box}>
 			<Table size='small'>
-				<TableHead className={'table-head'}>{createHeaderRow()}</TableHead>
-				<TableBody>{createRows()}</TableBody>
+				{header.length > 0 && (
+					<TableHead>
+						<TableRow>
+							{header.map((column, columnIndex) => (
+								<TableCell key={column} scope='col' className={numericColumns[columnIndex] ? 'skc-table__cell--numeric' : undefined}>
+									{column}
+								</TableCell>
+							))}
+						</TableRow>
+					</TableHead>
+				)}
+				<TableBody>
+					{rows.map((row, rowIndex) => {
+						const action = rowActions[rowIndex]
+						const cells = row.map((value, columnIndex) => (
+							<TableCell key={columnIndex} className={isNumeric(value) ? 'skc-table__cell--numeric' : undefined}>
+								{value}
+							</TableCell>
+						))
+
+						return action === undefined ? (
+							<TableRow key={rowIndex}>{cells}</TableRow>
+						) : (
+							<TableRow key={rowIndex} hover className='skc-table__row--action' tabIndex={0} onClick={action} onKeyDown={runOnEnterOrSpace(action)}>
+								{cells}
+							</TableRow>
+						)
+					})}
+				</TableBody>
 			</Table>
 		</TableContainer>
 	)
