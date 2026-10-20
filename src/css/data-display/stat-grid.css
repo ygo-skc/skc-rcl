@@ -1,0 +1,35 @@
+/*
+ * Stat grid - one-line tiles, label on the left and value on the right, as many columns as fit.
+ * Text sizes and weights come from the consumer's MUI theme. Colours can be themed by the page:
+ * --skc-stat-grid-text, --skc-stat-grid-muted (labels), --skc-stat-grid-tile
+ */
+.skc-stat-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+	gap: 6px;
+	margin: 0;
+	color: var(--skc-stat-grid-text, inherit);
+}
+
+.skc-stat-grid__stat {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 9px 12px;
+	border-radius: 8px;
+	background: var(--skc-stat-grid-tile, #f3f4f6);
+}
+
+/* a theme can give these variants margins and colours - the tile owns both */
+.skc-stat-grid .skc-stat-grid__label.MuiTypography-root {
+	margin: 0;
+	color: var(--skc-stat-grid-muted, #5c6370);
+}
+
+.skc-stat-grid .skc-stat-grid__value.MuiTypography-root {
+	margin: 0;
+	color: inherit;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
