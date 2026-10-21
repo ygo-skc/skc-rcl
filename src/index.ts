@@ -6,7 +6,8 @@ import DatedListItem from './components/data-display/DatedListItem.js'
 import Hint from './components/data-display/Hint.js'
 import Section from './components/data-display/Section.js'
 import SKCTable from './components/data-display/SKCTable.js'
-export { DateBadge, GenericNonBreakingErr, Tile, DatedListItem, Hint, Section, SKCTable, InlineDate }
+import SKCStatGrid from './components/data-display/SKCStatGrid.js'
+export { DateBadge, GenericNonBreakingErr, Tile, DatedListItem, Hint, Section, SKCTable, SKCStatGrid, InlineDate }
 
 import Pie from './components/data-display/charts/Pie.js'
 export { Pie }
@@ -21,4 +22,6 @@ import YGOCard from './components/ygo-card/YGOCard.js'
 import YGOCardWithPreviousBanStatus from './components/ygo-card/YGOCardWithPreviousBanStatus.js'
 import YGOCardWithQuantity from './components/ygo-card/YGOCardWithQuantity.js'
 import YGOCardColorIndicator from './components/ygo-card/YGOCardColorIndicator.js'
-export { YGOCardData as YGOCard, YGOCard as YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity, YGOCardColorIndicator }
+import YGOCardAttribute from './components/ygo-card/YGOCardAttribute.js'
+import YGOCardPreview from './components/ygo-card/YGOCardPreview.js'
+export { YGOCardData as YGOCard, YGOCard as YGOCardWithImage, YGOCardWithPreviousBanStatus, YGOCardWithQuantity, YGOCardColorIndicator, YGOCardAttribute, YGOCardPreview }

@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Link, Typography } from '@mui/material'
 import React, { FC } from 'react'
 import CardImageRounded from '../photo/CardImageRounded'
 import YGOCardData from './YGOCardData'
@@ -12,7 +12,8 @@ export type YGOCardWithPreviousBanStatusProps = {
 
 const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ card, previousBanStatus }) => {
 	return (
-		<a href={`/card/${card.cardID}`} className='ygo-card-previous-status-parent aggregate-anchor'>
+		// MUI Link, so a consumer's theme can route it client side (MuiLink defaultProps.component)
+		<Link href={`/card/${card.cardID}`} className='ygo-card-previous-status-parent aggregate-anchor' underline='none' color='inherit'>
 			<div className='img-and-previous-status-parent'>
 				<CardImageRounded cardID={card.cardID} size='tn' variant='circle' loading='lazy' />
 				<div className='ban-list-status-change-text-parent'>
@@ -36,7 +37,7 @@ const YGOCardWithPreviousBanStatus: FC<YGOCardWithPreviousBanStatusProps> = ({ c
 				monsterAssociation={card.monsterAssociation}
 				fullDetails={false}
 			/>
-		</a>
+		</Link>
 	)
 }
 

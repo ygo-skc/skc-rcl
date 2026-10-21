@@ -24,3 +24,25 @@ export const WithOnClick: Story = {
 		rowActions: [action('clicked'), action('clicked')],
 	},
 }
+
+export const NumericColumns: Story = {
+	args: {
+		header: ['No.', 'Card', 'Frame', 'Prints'],
+		rows: [
+			['001', "Dark Magician, the Pharaoh's Servant", 'Effect', '3'],
+			['002', 'Kuriboh - Multiply!', 'Effect', '3'],
+			['003', 'Dark Magical Curtain', 'Spell', '3'],
+			['004', 'Favorite HERO Shining Flare Wingman', 'Fusion', '3'],
+		],
+	},
+}
+
+export const WithoutHeader: Story = {
+	args: {
+		header: [],
+		rows: [
+			['Total', '13502'],
+			['Displaying', '50'],
+		],
+	},
+}
