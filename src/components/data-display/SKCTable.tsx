@@ -10,7 +10,7 @@ export type SKCTableProps = {
 	fullWidth?: boolean
 }
 
-// counts, ids made of digits, percentages and signed numbers line up on the right; dates and words stay left
+// counts, ids made of digits, percentages and signed numbers; dates and words aren't numeric
 const isNumeric = (value: string) => /^[-+]?[\d,]*\.?\d+%?$/.test(value.trim())
 
 const runOnEnterOrSpace = (action: () => void) => (event: KeyboardEvent<HTMLTableRowElement>) => {
@@ -25,8 +25,9 @@ const runOnEnterOrSpace = (action: () => void) => (event: KeyboardEvent<HTMLTabl
  * --skc-table-* custom properties. Rows with an action can be clicked or reached with the keyboard
  */
 const SKCTable: FC<SKCTableProps> = ({ header, rows, rowActions = [], fullWidth = false }) => {
-	// a header lines up with its column when every value under it is numeric
-	const numericColumns = header.map((_, column) => rows.length > 0 && rows.every((row) => isNumeric(row[column] ?? '')))
+	// alignment is decided per column so a column never zig-zags - it goes right only when every value in it is numeric
+	const columnCount = Math.max(header.length, ...rows.map((row) => row.length))
+	const numericColumns = Array.from({ length: columnCount }, (_, column) => rows.length > 0 && rows.every((row) => isNumeric(row[column] ?? '')))
 
 	return (
 		<TableContainer className='skc-table' style={fullWidth ? { maxWidth: '100%', margin: '0' } : undefined} component={Box}>
@@ -46,7 +47,7 @@ const SKCTable: FC<SKCTableProps> = ({ header, rows, rowActions = [], fullWidth 
 					{rows.map((row, rowIndex) => {
 						const action = rowActions[rowIndex]
 						const cells = row.map((value, columnIndex) => (
-							<TableCell key={columnIndex} className={isNumeric(value) ? 'skc-table__cell--numeric' : undefined}>
+							<TableCell key={columnIndex} className={numericColumns[columnIndex] ? 'skc-table__cell--numeric' : undefined}>
 								{value}
 							</TableCell>
 						))

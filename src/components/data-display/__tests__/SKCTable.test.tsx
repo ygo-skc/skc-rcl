@@ -31,22 +31,24 @@ describe('Table', () => {
 		expect(within(screen.getByRole('row')).getAllByText('Effect')).toHaveLength(2)
 	})
 
-	it('marks numeric values so they line up on the right', () => {
+	it('lines up a column on the right only when every value in it is numeric', () => {
 		render(
 			<SKCTable
 				header={[]}
 				rows={[
-					['Total Unique Cards', '126'],
-					['Released', 'Sep 4, 2026'],
-					['Share', '60.5%'],
+					['Total Unique Cards', '126', '+12'],
+					['Released', 'Sep 4, 2026', '-3'],
+					['Share', '60.5%', '1,024'],
 				]}
 			/>,
 		)
 
-		expect(screen.getByText('126')).toHaveClass('skc-table__cell--numeric')
-		expect(screen.getByText('60.5%')).toHaveClass('skc-table__cell--numeric')
+		// a mixed column stays left for every cell instead of zig-zagging
+		expect(screen.getByText('126')).not.toHaveClass('skc-table__cell--numeric')
+		expect(screen.getByText('60.5%')).not.toHaveClass('skc-table__cell--numeric')
 		expect(screen.getByText('Sep 4, 2026')).not.toHaveClass('skc-table__cell--numeric')
 		expect(screen.getByText('Total Unique Cards')).not.toHaveClass('skc-table__cell--numeric')
+		for (const value of ['+12', '-3', '1,024']) expect(screen.getByText(value)).toHaveClass('skc-table__cell--numeric')
 	})
 
 	it('lines up a header with its column when every value in the column is numeric', () => {
@@ -64,6 +66,9 @@ describe('Table', () => {
 		expect(number).toHaveClass('skc-table__cell--numeric')
 		expect(card).not.toHaveClass('skc-table__cell--numeric')
 		expect(prints).not.toHaveClass('skc-table__cell--numeric')
+		// body cells follow their column, so the lone numeric print count stays with its header
+		expect(screen.getByText('001')).toHaveClass('skc-table__cell--numeric')
+		expect(screen.getByText('3')).not.toHaveClass('skc-table__cell--numeric')
 	})
 
 	it('runs a row action on click and from the keyboard', () => {

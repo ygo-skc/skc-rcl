@@ -1,5 +1,6 @@
 import '../../css/data-display/list.css'
 
+import { Link } from '@mui/material'
 import React, { FC, ReactNode } from 'react'
 import DateBadge from './DateBadge'
 import InlineDate from './InlineDate'
@@ -18,10 +19,11 @@ const DatedListItem: FC<DatedListItemProps> = ({ link, month, day, year, variant
 	const classes = link === '' ? `list-item-parent disabled ${className}` : `list-item-parent ${className}`
 
 	return (
-		<a href={link} className={classes}>
+		// MUI Link, so a consumer's theme can route it client side (MuiLink defaultProps.component)
+		<Link href={link} className={classes} underline='none' color='inherit'>
 			{variant === 'badge' ? <DateBadge month={month} day={day} year={year} variant='condensed' /> : <InlineDate month={month} day={day} year={year} />}
 			<div className='list-item-text'>{children}</div>
-		</a>
+		</Link>
 	)
 }
 
