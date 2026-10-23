@@ -32,7 +32,7 @@
 		"@mdx-js/react": "3.1.1",
 		"d3-color": "3.1.0",
 		"@babel/traverse": "8.0.7",
-		"@babel/core": "8.0.7",
+		"@babel/core": "8.0.9",
 		"postcss": "8.5.31",
 		"react-dom": "19.3.1",
 		"ws": "8.22.0",
