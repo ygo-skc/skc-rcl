@@ -9175,10 +9175,10 @@ webidl-conversions@^7.0.0:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-7.0.0.tgz#256b4e1882be7debbf01d05f0aa2039778ea080a"
   integrity sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==
 
-webpack-dev-middleware@8.6.0, webpack-dev-middleware@^6.1.2:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-8.6.0.tgz#7d83f6816a6e09534790b20b46d269a98fd3d906"
-  integrity sha512-gDtuNFvzUys4RSkLAjXFCSbKz/MYIrCR9oXcIOnv4vFTmGsArddZoCb9LKlKWZO/JVL0COgK6hFBGPOt6EBg2Q==
+webpack-dev-middleware@8.6.1, webpack-dev-middleware@^6.1.2:
+  version "8.6.1"
+  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-8.6.1.tgz#9d87e3947488c614ffdb7ea63d21590d32d9a742"
+  integrity sha512-XU+DA98yi8FpeI0zPEEki2t4cYKoFOf6PmXl+ocBZ/VXcxFfzeFGK48SZIuFy0o5opnRPVdDGTb71Gy102eiGg==
   dependencies:
     memfs "^4.68.2"
     mime-db "^1.54.0"
